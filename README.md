@@ -128,7 +128,7 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 | 2025 | 📜 Altium PCB Design Certified | Professional PCB design skills |
 | 2024 | 🤖 NVIDIA Deep Learning Certified | AI/ML technical competency |
 | 2023 | 🥇 Origin's EV Case Study Winner | Electric vehicle systems innovation |
-| 2022-23 | 👥 Team Leader, EESTEC LC Novi Sad | Led 50+ member engineering organization |
+| 2022-23 | 👥 HR Team Lead, EESTEC LC Novi Sad | Led 20+ member HR team |
 
 ---
 
