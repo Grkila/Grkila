@@ -71,26 +71,24 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 
 ## 🚀 **Featured Projects**
 
-### 🤖 **Smart Robotic Grasping System** | *Jan 2025 - Hackathon Winner*
-**Impact:** Delivered complete adaptive force control system in 24 hours, beating 15 teams  
+### 🤖 **Smart Robotic Grasping System** | *March 2025 *
+**Impact:** Delivered complete adaptive force control system in 24 hours  
 **Tech:** XMC4700, Fuzzy Logic, PID Control, Real-time Force Sensing  
 **Metrics:** 95% grasp success rate across 5 different object types  
-*Repository available upon request*
 
 ---
 
 ### 🦾 **Two-Joint Robot Manipulator Control** | *Nov 2024* | [📂 Code](https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control)
 **Impact:** Improved robotic arm tracking precision by 25% vs standard PID  
-**Tech:** MATLAB/Simulink, LabVIEW, FPGA, Hardware-in-Loop Testing  
+**Tech:** MATLAB/Simulink, LabVIEW, FPGA,Software-in-loop, Hardware-in-Loop Testing  
 **Metrics:** <2° error in trajectory tracking, 50ms response time  
 
 ---
 
-### 💰 **High-Frequency Trading System** | *Jan 2025 - Hackathon*
+### 💰 **High-Frequency Trading System** | *June 2025 - Hackathon*
 **Impact:** Managed $1M virtual portfolio, achieved 15% ROI in 24 hours  
 **Tech:** WebSocket API, Raspberry Pi, JavaScript, Derivatives Trading  
 **Metrics:** <10ms latency, processed 1000+ trades/hour  
-*Code confidential per competition rules*
 
 ---
 
@@ -101,18 +99,17 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 
 ---
 
-### 💡 **Budget Servo Motor Solution** | *Jul 2024*
-**Impact:** 60% cost reduction vs commercial servos with equivalent precision  
-**Tech:** Arduino, Custom PWM Control, C Programming  
-**Metrics:** ±1° accuracy, $8 total cost vs $20 commercial equivalent  
-*Tutorial and code available upon request*
+### 🔌 **Bare-Metal Modbus Protocol Implementation** | *Apr 2024* | [📂 Code](https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller)
+**Impact:** Reliable industrial communication in resource-constrained embedded systems  
+**Tech:** Intel 8051, C Programming, Keil uVision, Modbus RTU, LRC Error Checking  
+**Metrics:** Supports multiple function codes (Read Coils, Holding Registers), optimized for minimal memory footprint  
 
 ---
 
-### 🏭 **Industrial PLC Automation** | *Mar 2024* | [📂 Code](https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects)
-**Impact:** Automated assembly line process, reduced cycle time by 20%  
-**Tech:** Siemens TIA Portal, Ladder Logic, S7-1200 PLC  
-**Metrics:** 99.5% uptime, 15-second cycle time improvement  
+### 🏭 **Siemens S7-1200 PLC Programming Exercises** | *Mar 2024* | [📂 Code](https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects)
+**Impact:** Comprehensive industrial automation training with 6 practical exercises  
+**Tech:** Siemens TIA Portal, Ladder Logic, S7-1200 PLC, Industrial Control Systems  
+**Metrics:** Complete project template and documentation for counter, adder, and control logic implementations
 
 ---
 
@@ -120,7 +117,7 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 
 | Year | Achievement | Impact |
 |------|-------------|---------|
-| 2025 | 🥇 EESTEC Challenge Winner | Engineering innovation competition |
+| 2025 | 🥇 EESTEC Challenge Local Round Winner | Engineering innovation competition |
 | 2025 | 📜 Altium PCB Design Certified | Professional PCB design skills |
 | 2024 | 🤖 NVIDIA Deep Learning Certified | AI/ML technical competency |
 | 2023 | 🥇 Origin's EV Case Study Winner | Electric vehicle systems innovation |
@@ -131,7 +128,7 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 ## 🎓 **Education**
 
 **B.S. Control Systems Engineering** | *Faculty of Technical Sciences, Novi Sad* | *Expected 2025*  
-*GPA: 8.5/10 | Relevant: Robotics, Embedded Systems, Industrial Automation, Machine Learning*
+*GPA: 8.81/10 | Relevant: Robotics, Embedded Systems, Industrial Automation, Machine Learning*
 
 **Harvard CS50** | *Computer Science Fundamentals* | *2022*
 
