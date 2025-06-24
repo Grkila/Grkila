@@ -8,39 +8,64 @@
   <a href="https://linkedin.com/in/du%C5%A1an-grkovi%C4%87-338074b3/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:dusangrkovic2002@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://github.com/Grkila"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://grkila.github.io/my-cv/CV"><img src="https://img.shields.io/badge/CV-Download-FF6B6B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="CV"/></a>
 </p>
 
 ---
 
-## 🎯 **Value Proposition**
+## 📜 **About Me**
 
-**Control Systems Engineering student** specializing in **robotics** and **embedded systems** with proven ability to deliver **real-time automation solutions**. Track record of optimizing system performance by **25%**, reducing hardware costs by **60%**, and leading teams to deliver complex projects in **24-hour hackathons**. Expert in bridging theory and practical implementation.
+Fourth-year **Control Systems Engineering student** with a passion for **robotics**, **embedded systems**, and **automation**. Proficient in control algorithms, microcontroller programming, and computer vision, demonstrated through projects like robot manipulator simulations and IoT-based automation systems. 
+
+Strong **leadership** and **teamwork** skills, developed as head organizer of events and HR team lead at **EESTEC LC Novi Sad** (2022–2023). Proven track record in **rapid prototyping** and delivering complex technical solutions under tight deadlines, including **24-hour hackathon wins** and managing **$1M virtual trading portfolios**.
 
 ---
 
-## 💼 **Technical Expertise**
+## 🛠️ **Technical Skills**
 
-<div align="center">
-
-### **🔥 Expert Level**
-![C/C++](https://img.shields.io/badge/C/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![MATLAB/Simulink](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
-![PID Control](https://img.shields.io/badge/PID_Control-4CAF50?style=flat-square&logo=control&logoColor=white)
-![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
-
-### **⚡ Advanced**
+### 💻 **Programming Languages**
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
-![Fuzzy Logic](https://img.shields.io/badge/Fuzzy_Logic-9C27B0?style=flat-square&logo=fuzzy&logoColor=white)
-![Computer Vision](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
+![VHDL](https://img.shields.io/badge/VHDL-543978?style=flat-square&logo=xilinx&logoColor=white)
+![Ladder Logic](https://img.shields.io/badge/Ladder_Logic-FF6B35?style=flat-square&logo=ladder&logoColor=white)
 
-### **🚀 Proficient**
+### 🔧 **Tools & Frameworks**
+![Simulink](https://img.shields.io/badge/Simulink-0076A8?style=flat-square&logo=mathworks&logoColor=white)
+![LabVIEW](https://img.shields.io/badge/LabVIEW-FFDB00?style=flat-square&logo=labview&logoColor=black)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white)
-![FPGA](https://img.shields.io/badge/FPGA-5C2D91?style=flat-square&logo=xilinx&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Real-Time Systems](https://img.shields.io/badge/Real--Time_Systems-795548?style=flat-square&logo=realtime&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
+![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
+![Siemens PLC](https://img.shields.io/badge/Siemens_PLC-009999?style=flat-square&logo=siemens&logoColor=white)
 
-</div>
+### 🤖 **Technologies**
+![Embedded Systems](https://img.shields.io/badge/Embedded_Systems-FF6B35?style=flat-square&logo=embedded&logoColor=white)
+![PID Control](https://img.shields.io/badge/PID_Control-4CAF50?style=flat-square&logo=control&logoColor=white)
+![Fuzzy Logic](https://img.shields.io/badge/Fuzzy_Logic-9C27B0?style=flat-square&logo=fuzzy&logoColor=white)
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Bluetooth](https://img.shields.io/badge/Bluetooth-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
+![Wi-Fi](https://img.shields.io/badge/Wi--Fi-00A1C9?style=flat-square&logo=wifi&logoColor=white)
+![Modbus](https://img.shields.io/badge/Modbus-FF6B35?style=flat-square&logo=modbus&logoColor=white)
+![FPGA](https://img.shields.io/badge/FPGA-5C2D91?style=flat-square&logo=xilinx&logoColor=white)
+
+### 🖥️ **Software**
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Keil uVision](https://img.shields.io/badge/Keil_uVision-C51A4A?style=flat-square&logo=arm&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white)
+![Quartus Prime](https://img.shields.io/badge/Quartus_Prime-0071C5?style=flat-square&logo=intel&logoColor=white)
+![AutoCAD](https://img.shields.io/badge/AutoCAD-0696D7?style=flat-square&logo=autodesk&logoColor=white)
+![Fusion 360](https://img.shields.io/badge/Fusion_360-FF6D00?style=flat-square&logo=autodesk&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white)
+
+### ⚙️ **Other**
+![Sensor Fusion](https://img.shields.io/badge/Sensor_Fusion-607D8B?style=flat-square&logo=sensor&logoColor=white)
+![Real-Time Systems](https://img.shields.io/badge/Real--Time_Systems-795548?style=flat-square&logo=realtime&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![PLC Programming](https://img.shields.io/badge/PLC_Programming-009999?style=flat-square&logo=siemens&logoColor=white)
+![CAD](https://img.shields.io/badge/CAD-0696D7?style=flat-square&logo=autodesk&logoColor=white)
+![3D Printing](https://img.shields.io/badge/3D_Printing-FF6B6B?style=flat-square&logo=3d&logoColor=white)
 
 ---
 
@@ -143,6 +168,7 @@
   
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_Now-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/du%C5%A1an-grkovi%C4%87-338074b3/)
   [![Email](https://img.shields.io/badge/Email-dusangrkovic2002@gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:dusangrkovic2002@gmail.com)
+  [![CV](https://img.shields.io/badge/CV-View_Full_Resume-FF6B6B?style=for-the-badge&logo=adobeacrobatreader)](https://grkila.github.io/my-cv/CV)
 </div>
 
 ---
