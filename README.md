@@ -74,7 +74,7 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 ### 🤖 **Smart Robotic Grasping System** | *March 2025 *
 **Impact:** Delivered complete adaptive force control system in 24 hours  
 **Tech:** XMC4700, Fuzzy Logic, PID Control, Real-time Force Sensing  
-**Metrics:** 95% grasp success rate across 5 different object types  
+**Metrics:** 95% grasp success rate across 5 different object types, recognised for best technical solution.  
 
 ---
 
@@ -96,6 +96,13 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 **Impact:** 92% accuracy in real-time parking space detection  
 **Tech:** Python, OpenCV, Flask, RESTful API  
 **Metrics:** Processes 30 FPS video stream, <100ms detection time  
+
+---
+
+### 🏥 **Machine Learning Diabetes Prediction** | *Nov 2023* | [📂 Code](https://github.com/Grkila/Diabetes-prediction-using-machine-learning)
+**Impact:** Healthcare prediction system achieving ~90% accuracy using ensemble learning  
+**Tech:** Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn  
+**Metrics:** 5-fold cross-validation, F1 score optimization, comprehensive ROC analysis with multiple ensemble models  
 
 ---
 
