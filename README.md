@@ -71,7 +71,7 @@ Actively developing **leadership** and **teamwork** skills through my role as HR
 
 ## 🚀 **Featured Projects**
 
-### 🤖 **Smart Robotic Grasping System** | *March 2025 *
+### 🤖 **Smart Robotic Grasping System** | *March 2025*|
 **Impact:** Delivered complete adaptive force control system in 24 hours  
 **Tech:** XMC4700, Fuzzy Logic, PID Control, Real-time Force Sensing  
 **Metrics:** 95% grasp success rate across 5 different object types, recognised for best technical solution.  
@@ -92,7 +92,7 @@ Actively developing **leadership** and **teamwork** skills through my role as HR
 
 ---
 
-### 🚗 **Smart Parking Detection System** | *Sep 2024* | [📂 Demo](https://github.com/Grkila)
+### 🚗 **Smart Parking Detection System** | *Sep 2024* |
 **Impact:** 92% accuracy in real-time parking space detection  
 **Tech:** Python, OpenCV, Flask, RESTful API  
 **Metrics:** Processes 30 FPS video stream, <100ms detection time  
