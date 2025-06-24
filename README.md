@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Dušan Grković
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E86AB&center=true&vCenter=true&width=500&lines=Control+Systems+Engineer;Robotics+%26+Embedded+Systems+Expert;Building+Intelligent+Automation+Solutions" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E86AB&center=true&vCenter=true&width=500&lines=Control+Systems+Engineering+Student;Passionate+About+Embedded+Systems;Exploring+Robotics+%26+Automation" alt="Typing SVG" />
 </div>
 
 <p align="center">
@@ -15,9 +15,9 @@
 
 ## 📜 **About Me**
 
-Fourth-year **Control Systems Engineering student** with a passion for **robotics**, **embedded systems**, and **automation**. Proficient in control algorithms, microcontroller programming, and computer vision, demonstrated through projects like robot manipulator simulations and IoT-based automation systems. 
+Fourth-year **Control Systems Engineering student** with a deep passion for **embedded systems**, **control systems**, and **robotics automation**. Enthusiastic about bridging theoretical knowledge with hands-on implementation through projects like robot manipulator simulations, IoT-based automation systems, and low-level microcontroller programming.
 
-Strong **leadership** and **teamwork** skills, developed as head organizer of events and HR team lead at **EESTEC LC Novi Sad** (2022–2023). Proven track record in **rapid prototyping** and delivering complex technical solutions under tight deadlines, including **24-hour hackathon wins** and managing **$1M virtual trading portfolios**.
+Actively developing **leadership** and **teamwork** skills through my role as HR team lead at **EESTEC LC Novi Sad** (2022–2023). Driven by curiosity and the challenge of solving complex technical problems, demonstrated through **hackathon participations**, **academic projects**, and exploring cutting-edge technologies like **machine learning** applied to control systems.
 
 ---
 
@@ -150,25 +150,25 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 
 ---
 
-## 🎯 **Looking For Opportunities In:**
+## 🎯 **Seeking Opportunities In:**
 
 <div align="center">
 
-| **Robotics Engineer** | **Embedded Systems** | **Control Systems** | **Automation Engineer** |
+| **Embedded Systems Intern** | **Control Systems Projects** | **Robotics Research** | **Industrial Automation** |
 |:---------------------:|:-------------------:|:------------------:|:----------------------:|
-| Robot control algorithms | Real-time embedded C/C++ | PID/Fuzzy/SMC design | Industrial automation |
-| ROS/Hardware integration | STM32/ESP32 development | MATLAB/Simulink modeling | PLC programming |
-| Computer vision systems | IoT device development | System identification | Process optimization |
+| Microcontroller programming | PID/Fuzzy control design | Robot control algorithms | PLC programming basics |
+| STM32/ESP32 development | MATLAB/Simulink modeling | Hardware-software integration | Industrial communication |
+| Real-time systems | System identification | Sensor fusion applications | Process control learning |
 
 </div>
 
 ---
 
-## 📫 **Let's Build Something Amazing Together!**
+## 📫 **Let's Connect and Learn Together!**
 
 <div align="center">
-  <p><strong>Ready to contribute to cutting-edge robotics and automation projects</strong></p>
-  <p>💼 <em>Open to internships, co-ops, and entry-level positions</em> | 🌍 <em>Available for relocation</em></p>
+  <p><strong>Eager to apply my passion for embedded systems and control engineering in real-world projects</strong></p>
+  <p>🎓 <em>Seeking internships, research opportunities, and collaborative projects</em> | 🌍 <em>Open to learning and growth</em></p>
   
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_Now-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/du%C5%A1an-grkovi%C4%87-338074b3/)
   [![Email](https://img.shields.io/badge/Email-dusangrkovic2002@gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:dusangrkovic2002@gmail.com)
@@ -180,5 +180,5 @@ Strong **leadership** and **teamwork** skills, developed as head organizer of ev
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Grkila&style=flat-square&color=blue" alt="Profile Views"/>
   <br>
-  <sub>⭐ From [Grkila](https://github.com/Grkila) | Automating the Future, One Algorithm at a Time 🤖</sub>
+  <sub>⭐ From [Grkila](https://github.com/Grkila) | Exploring the Future of Automation, One Project at a Time 🤖</sub>
 </div>
