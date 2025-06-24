@@ -21,6 +21,11 @@ Actively developing **leadership** and **teamwork** skills through my role as HR
 
 ---
 
+<details>
+<summary>
+  <h2 style="display: inline;">🔍 <strong>READ MORE</strong></h2>
+</summary>
+
 ## 🛠️ **Technical Skills**
 
 ### 💻 **Programming Languages**
@@ -182,3 +187,5 @@ Actively developing **leadership** and **teamwork** skills through my role as HR
   <br>
   <sub>⭐ From [Grkila](https://github.com/Grkila) | Exploring the Future of Automation, One Project at a Time 🤖</sub>
 </div>
+
+</details>
