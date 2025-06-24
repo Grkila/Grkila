@@ -118,12 +118,7 @@ Actively developing **leadership** and **teamwork** skills through my role as HR
 
 ---
 
-### 🏭 **Siemens S7-1200 PLC Programming Exercises** | *Mar 2024* | [📂 Code](https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects)
-**Impact:** Comprehensive industrial automation training with 6 practical exercises  
-**Tech:** Siemens TIA Portal, Ladder Logic, S7-1200 PLC, Industrial Control Systems  
-**Metrics:** Complete project template and documentation for counter, adder, and control logic implementations
 
----
 
 ## 🏆 **Recent Achievements**
 
