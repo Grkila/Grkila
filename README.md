@@ -14,11 +14,9 @@
 ---
 
 ## 📜 **About Me**
-
-Fourth-year **Control Systems Engineering student** with a deep passion for **embedded systems**, **control systems**, and **robotics automation**. Enthusiastic about bridging theoretical knowledge with hands-on implementation through projects like robot manipulator simulations, IoT-based automation systems, and low-level microcontroller programming.
-
-Actively developing **leadership** and **teamwork** skills through my role as HR team lead at **EESTEC LC Novi Sad** (2022–2023). Driven by curiosity and the challenge of solving complex technical problems, demonstrated through **hackathon participations**, **academic projects**, and exploring cutting-edge technologies like **machine learning** applied to control systems.
-
+I am a fourth-year Control Systems Engineering student specializing in robotics, embedded systems, and industrial automation. My coursework and hands-on projects have provided me with a strong foundation in control algorithm design (PID, SMC, Fuzzy), microcontroller programming (ESP32, STM32), and computer vision with OpenCV.
+Key projects include developing SIL/HIL simulations for a two-joint robot manipulator, engineering a smart robotic grasping system with adaptive force control, and building a high-frequency derivatives trading system for a 24-hour hackathon. 
+I'm always looking for the next challenge in robotics or control systems. If you're working on something exciting in automation or just want to talk tech, feel free to connect!
 ---
 
 <details>
