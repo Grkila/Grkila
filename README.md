@@ -12,12 +12,11 @@
 </p>
 
 ---
-
 ## 📜 **About Me**
-I am a fourth-year Control Systems Engineering student specializing in robotics, embedded systems, and industrial automation. My coursework and hands-on projects have provided me with a strong foundation in control algorithm design (PID, SMC, Fuzzy), microcontroller programming (ESP32, STM32), and computer vision with OpenCV.
-Key projects include developing SIL/HIL simulations for a two-joint robot manipulator, engineering a smart robotic grasping system with adaptive force control, and building a high-frequency derivatives trading system for a 24-hour hackathon. 
-I'm always looking for the next challenge in robotics or control systems. If you're working on something exciting in automation or just want to talk tech, feel free to connect!
 ---
+I am a fourth-year Control Systems Engineering student specializing in robotics, embedded systems, and industrial automation. My coursework and hands-on projects have provided me with a strong foundation in control algorithm design (PID, SMC, Fuzzy), microcontroller programming (ESP32, STM32), and computer vision with OpenCV.
+Key projects include developing SIL/HIL simulations for a two-joint robot manipulator, engineering a smart robotic grasping system with adaptive force control, and building a high-frequency derivatives trading system for a 24-hour hackathon. My leadership experience as Head Organizer for EESTEC LC Novi Sad has equipped me with valuable project management and teamwork skills. I am proficient in C/C++, Python, MATLAB, and various industry-standard tools.
+I'm always looking for the next challenge in robotics or control systems. If you're working on something exciting in automation or just want to talk tech, feel free to connect!
 
 <details>
 <summary>
