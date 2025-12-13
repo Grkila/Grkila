@@ -133,7 +133,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 ## 🎓 **Education**
 
 **B.S. Control Systems Engineering** | *Faculty of Technical Sciences, Novi Sad* | *Expected 2025*  
-*GPA: 8.81/10 | Relevant: Robotics, Embedded Systems, Industrial Automation, Machine Learning*
+*GPA: 9.1/10 | Relevant: Robotics, Embedded Systems, Industrial Automation, Machine Learning*
 
 **Harvard CS50** | *Computer Science Fundamentals* | *2022*
 
