@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Dušan Grković
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E86AB&center=true&vCenter=true&width=500&lines=Control+Systems+Engineering+Student;Passionate+About+Embedded+Systems;Exploring+Robotics+%26+Automation" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E86AB&center=true&vCenter=true&width=500&lines=Electrical+%26+Computer+Engineer;Passionate+About+Embedded+Systems;Exploring+Robotics+%26+Automation" alt="Typing SVG" />
 </div>
 
 <p align="center">
@@ -14,8 +14,9 @@
 ---
 ## 📜 **About Me**
 ---
-I am a fourth-year Control Systems Engineering student specializing in robotics, embedded systems, and industrial automation. My coursework and hands-on projects have provided me with a strong foundation in control algorithm design (PID, SMC, Fuzzy), microcontroller programming (ESP32, STM32), and computer vision with OpenCV.
-Key projects include developing SIL/HIL simulations for a two-joint robot manipulator, engineering a smart robotic grasping system with adaptive force control, and building a high-frequency derivatives trading system for a 24-hour hackathon. My leadership experience as Head Organizer for EESTEC LC Novi Sad has equipped me with valuable project management and teamwork skills. I am proficient in C/C++, Python, MATLAB, and various industry-standard tools.
+I am an Electrical and Computer Engineering graduate (B.El.Comp.Eng. Hons) with a passion for robotics, embedded systems, and industrial automation. I recently completed my undergraduate studies with a 9.11/10 GPA (Oct 2021 - Dec 2025), specializing in mechatronics and control systems.
+My expertise spans the full stack of robotic development: from mechanical design (FDM 3D printing) and PCB layout to firmware (FreeRTOS, ESP32, STM32) and control algorithms (PID, Fuzzy, FFT-based signal analysis). Key projects include my thesis on an adaptive gripper with micro-vibration slip detection and SIL/HIL simulations for robot manipulators.
+My leadership experience as Head Organizer for EESTEC LC Novi Sad has equipped me with valuable project management and teamwork skills. I am proficient in C/C++, Python, MATLAB, and various industry-standard tools.
 I'm always looking for the next challenge in robotics or control systems. If you're working on something exciting in automation or just want to talk tech, feel free to connect!
 
 <details>
@@ -45,6 +46,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 ### 🤖 **Technologies**
 ![Embedded Systems](https://img.shields.io/badge/Embedded_Systems-FF6B35?style=flat-square&logo=embedded&logoColor=white)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-282C34?style=flat-square)
 ![PID Control](https://img.shields.io/badge/PID_Control-4CAF50?style=flat-square&logo=control&logoColor=white)
 ![Fuzzy Logic](https://img.shields.io/badge/Fuzzy_Logic-9C27B0?style=flat-square&logo=fuzzy&logoColor=white)
 ![Computer Vision](https://img.shields.io/badge/Computer_Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
@@ -68,16 +70,16 @@ I'm always looking for the next challenge in robotics or control systems. If you
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![PLC Programming](https://img.shields.io/badge/PLC_Programming-009999?style=flat-square&logo=siemens&logoColor=white)
 ![CAD](https://img.shields.io/badge/CAD-0696D7?style=flat-square&logo=autodesk&logoColor=white)
-![3D Printing](https://img.shields.io/badge/3D_Printing-FF6B6B?style=flat-square&logo=3d&logoColor=white)
+![FDM 3D Printing](https://img.shields.io/badge/FDM_3D_Printing-FF6B6B?style=flat-square&logo=3d&logoColor=white)
 
 ---
 
 ## 🚀 **Featured Projects**
 
-### 🤖 **Smart Robotic Grasping System** | *March 2025*|
-**Impact:** Delivered complete adaptive force control system in 24 hours  
-**Tech:** XMC4700, Fuzzy Logic, PID Control, Real-time Force Sensing  
-**Metrics:** 95% grasp success rate across 5 different object types, recognised for best technical solution.  
+### 🤖 **Adaptive Gripper with Micro-Vibration Slip Detection** | *Dec 2025* | [📂 Code](https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection)
+**Impact:** Developed a novel slip detection system using micro-vibration analysis (FFT) and magnetic sensing (Thesis Project).
+**Tech:** ESP32 (FreeRTOS), TLV493D (3D Hall), FFT Signal Analysis, Python (Telemetry), FDM 3D Printing.
+**Metrics:** <90ms reaction time, non-destructive handling of fragile objects, robust slip detection in 40-120Hz band.  
 
 ---
 
@@ -132,8 +134,8 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 ## 🎓 **Education**
 
-**B.S. Control Systems Engineering** | *Faculty of Technical Sciences, Novi Sad* | *Expected 2025*  
-*GPA: 9.1/10 | Relevant: Robotics, Embedded Systems, Industrial Automation, Machine Learning*
+**B.El.Comp.Eng. (Honours)** | *Faculty of Technical Sciences, Novi Sad* | *2021 - 2025*  
+*GPA: 9.11/10 | Relevant: Robotics, Embedded Systems, Industrial Automation, Machine Learning, Signal Processing*
 
 **Harvard CS50** | *Computer Science Fundamentals* | *2022*
 
