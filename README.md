@@ -77,8 +77,8 @@ I'm always looking for the next challenge in robotics or control systems. If you
 ## **Featured Projects**
 
 ### **Adaptive Gripper with Micro-Vibration Slip Detection** | *Dec 2025* | [📂 Code](https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection)
-**Impact:** Developed a novel slip detection system using micro-vibration analysis (FFT) and magnetic sensing (Thesis Project).
-**Tech:** ESP32 (FreeRTOS), TLV493D (3D Hall), FFT Signal Analysis, Python (Telemetry), FDM 3D Printing.
+**Impact:** Developed a novel slip detection system using micro-vibration analysis (FFT) and magnetic sensing (Thesis Project).  
+**Tech:** ESP32 (FreeRTOS), TLV493D (3D Hall), FFT Signal Analysis, Python (Telemetry), FDM 3D Printing.  
 **Metrics:** <90ms reaction time, non-destructive handling of fragile objects, robust slip detection in 40-120Hz band.  
 
 ---
