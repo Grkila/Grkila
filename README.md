@@ -83,6 +83,16 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 ---
 
+### **Embedded & Robotics Team Lead - NSpace (ERC 2025)** | *May 2025 - Aug 2025* | [📂 Code](https://github.com/NSpaceTeam)
+**Impact:** Secured **7th place globally** (Remote Formula). Architected embedded control systems and development infrastructure for a team of 10 engineers.
+**Key Contributions:**
+- **Airlock System:** [[📂 Repo]](https://github.com/Grkila/Airlock-Control-System-HIL-Testbench) Developed safety-critical C++ firmware (ESP32) with FSMs and a custom HIL Testbench (Python/GUI) to validate logic without physical hardware. Designed serial protocols for high-frequency sensor data.
+- **Infrastructure & DevOps:** [[📂 Repo]](https://github.com/Grkila/Husarion-panther-sim-setup) Standardized dev environment using **Docker** (bundling ROS 2/Gazebo) to eliminate environment issues. Adjusted **Gazebo simulation** to match real-world rover physics and sensor noise. Deployed **NVIDIA Isaac Sim** on cloud infrastructure for high-performance photorealistic physics simulations.
+
+- **Tech:** ESP32, C++, Python, Docker, NVIDIA Isaac Sim, ROS 2, Serial Protocol
+
+---
+
 ### **Two-Joint Robot Manipulator Control** | *Nov 2024* | [📂 Code](https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control)
 **Impact:** Improved robotic arm tracking precision by 25% vs standard PID  
 **Tech:** MATLAB/Simulink, LabVIEW, FPGA,Software-in-loop, Hardware-in-Loop Testing  
@@ -124,6 +134,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 | Year | Achievement | Impact |
 |------|-------------|---------|
+| 2025 | 7th Place Global, ERC 2025 (Remote) | Embedded & Robotics Team Lead, NSpace |
 | 2025 | EESTEC Challenge Local Round Winner | Engineering innovation competition |
 | 2025 | Altium PCB Design Certified | Professional PCB design skills |
 | 2024 | NVIDIA Deep Learning Certified | AI/ML technical competency |
