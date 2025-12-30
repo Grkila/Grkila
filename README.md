@@ -12,7 +12,7 @@
 </p>
 
 ---
-## 📜 **About Me**
+## **About Me**
 ---
 I am an Electrical and Computer Engineering graduate (B.El.Comp.Eng. Hons) with a passion for robotics, embedded systems, and industrial automation. I recently completed my undergraduate studies with a 9.11/10 GPA (Oct 2021 - Dec 2025), specializing in mechatronics and control systems.
 My expertise spans the full stack of robotic development: from mechanical design (FDM 3D printing) and PCB layout to firmware (FreeRTOS, ESP32, STM32) and control algorithms (PID, Fuzzy, FFT-based signal analysis). Key projects include my thesis on an adaptive gripper with micro-vibration slip detection and SIL/HIL simulations for robot manipulators.
@@ -21,12 +21,12 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 <details>
 <summary>
-  <h2 style="display: inline;">🔍 <strong>READ MORE</strong></h2>
+  <h2 style="display: inline;"><strong>Read More</strong></h2>
 </summary>
 
-## 🛠️ **Technical Skills**
+## **Technical Skills**
 
-### 💻 **Programming Languages**
+### **Programming Languages**
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=c-sharp&logoColor=white)
@@ -35,7 +35,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 ![VHDL](https://img.shields.io/badge/VHDL-543978?style=flat-square&logo=xilinx&logoColor=white)
 ![Ladder Logic](https://img.shields.io/badge/Ladder_Logic-FF6B35?style=flat-square&logo=ladder&logoColor=white)
 
-### 🔧 **Tools & Frameworks**
+### **Tools & Frameworks**
 ![Simulink](https://img.shields.io/badge/Simulink-0076A8?style=flat-square&logo=mathworks&logoColor=white)
 ![LabVIEW](https://img.shields.io/badge/LabVIEW-FFDB00?style=flat-square&logo=labview&logoColor=black)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
@@ -44,7 +44,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
 ![Siemens PLC](https://img.shields.io/badge/Siemens_PLC-009999?style=flat-square&logo=siemens&logoColor=white)
 
-### 🤖 **Technologies**
+### **Technologies**
 ![Embedded Systems](https://img.shields.io/badge/Embedded_Systems-FF6B35?style=flat-square&logo=embedded&logoColor=white)
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-282C34?style=flat-square)
 ![PID Control](https://img.shields.io/badge/PID_Control-4CAF50?style=flat-square&logo=control&logoColor=white)
@@ -55,7 +55,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 ![Modbus](https://img.shields.io/badge/Modbus-FF6B35?style=flat-square&logo=modbus&logoColor=white)
 ![FPGA](https://img.shields.io/badge/FPGA-5C2D91?style=flat-square&logo=xilinx&logoColor=white)
 
-### 🖥️ **Software**
+### **Software**
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 ![Keil uVision](https://img.shields.io/badge/Keil_uVision-C51A4A?style=flat-square&logo=arm&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white)
@@ -64,7 +64,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 ![Fusion 360](https://img.shields.io/badge/Fusion_360-FF6D00?style=flat-square&logo=autodesk&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white)
 
-### ⚙️ **Other**
+### **Other**
 ![Sensor Fusion](https://img.shields.io/badge/Sensor_Fusion-607D8B?style=flat-square&logo=sensor&logoColor=white)
 ![Real-Time Systems](https://img.shields.io/badge/Real--Time_Systems-795548?style=flat-square&logo=realtime&logoColor=white)
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
@@ -74,44 +74,44 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 ---
 
-## 🚀 **Featured Projects**
+## **Featured Projects**
 
-### 🤖 **Adaptive Gripper with Micro-Vibration Slip Detection** | *Dec 2025* | [📂 Code](https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection)
+### **Adaptive Gripper with Micro-Vibration Slip Detection** | *Dec 2025* | [📂 Code](https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection)
 **Impact:** Developed a novel slip detection system using micro-vibration analysis (FFT) and magnetic sensing (Thesis Project).
 **Tech:** ESP32 (FreeRTOS), TLV493D (3D Hall), FFT Signal Analysis, Python (Telemetry), FDM 3D Printing.
 **Metrics:** <90ms reaction time, non-destructive handling of fragile objects, robust slip detection in 40-120Hz band.  
 
 ---
 
-### 🦾 **Two-Joint Robot Manipulator Control** | *Nov 2024* | [📂 Code](https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control)
+### **Two-Joint Robot Manipulator Control** | *Nov 2024* | [📂 Code](https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control)
 **Impact:** Improved robotic arm tracking precision by 25% vs standard PID  
 **Tech:** MATLAB/Simulink, LabVIEW, FPGA,Software-in-loop, Hardware-in-Loop Testing  
 **Metrics:** <2° error in trajectory tracking, 50ms response time  
 
 ---
 
-### 💰 **High-Frequency Trading System** | *June 2025 - Hackathon*
+### **High-Frequency Trading System** | *June 2025 - Hackathon*
 **Impact:** Managed $1M virtual portfolio, achieved 15% ROI in 24 hours  
 **Tech:** WebSocket API, Raspberry Pi, JavaScript, Derivatives Trading  
 **Metrics:** <10ms latency, processed 1000+ trades/hour  
 
 ---
 
-### 🚗 **Smart Parking Detection System** | *Sep 2024* |
+### **Smart Parking Detection System** | *Sep 2024* |
 **Impact:** 92% accuracy in real-time parking space detection  
 **Tech:** Python, OpenCV, Flask, RESTful API  
 **Metrics:** Processes 30 FPS video stream, <100ms detection time  
 
 ---
 
-### 🏥 **Machine Learning Diabetes Prediction** | *Nov 2023* | [📂 Code](https://github.com/Grkila/Diabetes-prediction-using-machine-learning)
+### **Machine Learning Diabetes Prediction** | *Nov 2023* | [📂 Code](https://github.com/Grkila/Diabetes-prediction-using-machine-learning)
 **Impact:** Healthcare prediction system achieving ~90% accuracy using ensemble learning  
 **Tech:** Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn  
 **Metrics:** 5-fold cross-validation, F1 score optimization, comprehensive ROC analysis with multiple ensemble models  
 
 ---
 
-### 🔌 **Bare-Metal Modbus Protocol Implementation** | *Apr 2024* | [📂 Code](https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller)
+### **Bare-Metal Modbus Protocol Implementation** | *Apr 2024* | [📂 Code](https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller)
 **Impact:** Reliable industrial communication in resource-constrained embedded systems  
 **Tech:** Intel 8051, C Programming, Keil uVision, Modbus RTU, LRC Error Checking  
 **Metrics:** Supports multiple function codes (Read Coils, Holding Registers), optimized for minimal memory footprint  
@@ -120,19 +120,19 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 
 
-## 🏆 **Recent Achievements**
+## **Recent Achievements**
 
 | Year | Achievement | Impact |
 |------|-------------|---------|
-| 2025 | 🥇 EESTEC Challenge Local Round Winner | Engineering innovation competition |
-| 2025 | 📜 Altium PCB Design Certified | Professional PCB design skills |
-| 2024 | 🤖 NVIDIA Deep Learning Certified | AI/ML technical competency |
-| 2023 | 🥇 Origin's EV Case Study Winner | Electric vehicle systems innovation |
-| 2022-23 | 👥 HR Team Lead, EESTEC LC Novi Sad | Led 20+ member HR team |
+| 2025 | EESTEC Challenge Local Round Winner | Engineering innovation competition |
+| 2025 | Altium PCB Design Certified | Professional PCB design skills |
+| 2024 | NVIDIA Deep Learning Certified | AI/ML technical competency |
+| 2023 | Origin's EV Case Study Winner | Electric vehicle systems innovation |
+| 2022-23 | HR Team Lead, EESTEC LC Novi Sad | Led 20+ member HR team |
 
 ---
 
-## 🎓 **Education**
+## **Education**
 
 **B.El.Comp.Eng. (Honours)** | *Faculty of Technical Sciences, Novi Sad* | *2021 - 2025*  
 *GPA: 9.11/10 | Relevant: Robotics, Embedded Systems, Industrial Automation, Machine Learning, Signal Processing*
@@ -141,7 +141,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 ---
 
-## 📈 **GitHub Activity**
+## **GitHub Activity**
 
 <div align="center">
   <img height="165em" src="https://github-readme-stats.vercel.app/api?username=Grkila&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
@@ -150,7 +150,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 ---
 
-## 🎯 **Seeking Opportunities In:**
+## **Seeking Opportunities In:**
 
 <div align="center">
 
@@ -164,11 +164,11 @@ I'm always looking for the next challenge in robotics or control systems. If you
 
 ---
 
-## 📫 **Let's Connect and Learn Together!**
+## **Let's Connect and Learn Together!**
 
 <div align="center">
   <p><strong>Eager to apply my passion for embedded systems and control engineering in real-world projects</strong></p>
-  <p>🎓 <em>Seeking internships, research opportunities, and collaborative projects</em> | 🌍 <em>Open to learning and growth</em></p>
+  <p><em>Seeking internships, research opportunities, and collaborative projects</em> | <em>Open to learning and growth</em></p>
   
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_Now-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/du%C5%A1an-grkovi%C4%87-338074b3/)
   [![Email](https://img.shields.io/badge/Email-dusangrkovic2002@gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:dusangrkovic2002@gmail.com)
@@ -180,7 +180,7 @@ I'm always looking for the next challenge in robotics or control systems. If you
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Grkila&style=flat-square&color=blue" alt="Profile Views"/>
   <br>
-  <sub>⭐ From [Grkila](https://github.com/Grkila) | Exploring the Future of Automation, One Project at a Time 🤖</sub>
+  <sub>From [Grkila](https://github.com/Grkila) | Exploring the Future of Automation, One Project at a Time</sub>
 </div>
 
 </details>
