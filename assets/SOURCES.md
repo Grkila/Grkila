@@ -33,3 +33,5 @@ The following READMEs informed the choice of a compact gallery and self-containe
 - [Navi's animated profile](https://github.com/navi3582/animated-github-profile): animation contained in repository SVG files.
 - [Neon Pulse Banner](https://github.com/beydemirfurkan/awesome-github-profile/tree/main/templates/02-animated/neon-pulse-banner): a slow animated header as the main visual element.
 - [Awesome GitHub Profile](https://github.com/beydemirfurkan/awesome-github-profile): compact layouts and project-focused examples.
+
+The `project-siemens.svg`, `project-modbus.svg`, and `project-ros.svg` buttons are original static SVG drawings with short project descriptions.

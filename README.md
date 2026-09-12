@@ -4,7 +4,9 @@ I'm an electrical and computer engineer who works across embedded systems, robot
 
 My projects range from a magnetic slip-sensing gripper to EV charging simulations and AI applications. I like work where software has a clear connection to the physical system.
 
-At CERN, I spent June to August 2026 building an OPC UA PubSub publisher, PLC timing tools, and a UNICOS workbook MCP server. I'm now studying for an M.Sc. in Computing and Control Engineering at the University of Novi Sad.
+At CERN, I spent June to August 2026 building an OPC UA PubSub publisher, PLC timing tools, and a UNICOS workbook MCP server. My [CERN technical report](https://repository.cern/records/b6jfa-g7j31) covers the publisher.
+
+I'm now studying for an M.Sc. in Computing and Control Engineering at the University of Novi Sad.
 
 <p>
 <a href="https://linkedin.com/in/dusan-grkovic"><img src="assets/button-linkedin.svg" alt="LinkedIn" height="38" /></a>
@@ -13,8 +15,6 @@ At CERN, I spent June to August 2026 building an OPC UA PubSub publisher, PLC ti
 </p>
 
 <img src="assets/engineering-four-panels.svg" alt="Animated robotics, PLC scanning, microcontroller signals, and an LLM network." width="100%" />
-
-[CERN technical report](https://repository.cern/records/b6jfa-g7j31)
 
 <details>
 <summary><strong>Show more: technologies and tools I use</strong></summary>
@@ -101,7 +101,13 @@ These cover my independent builds, team projects, and university coursework.
 
 <sub>The gripper preview uses accelerated test footage. The two AI previews are concept diagrams. Select any card for code and project details.</sub>
 
-**Also worth a look:** [Siemens S7 / TIA Portal](https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects) · [Modbus ASCII on 8051](https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller) · [ROS 2 / Docker setup](https://github.com/Grkila/Husarion-panther-sim-setup)
+### More projects
+
+<p>
+<a href="https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects"><img src="assets/project-siemens.svg" alt="Siemens S7: PLC programming · TIA Portal" width="270" height="68" /></a>
+<a href="https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller"><img src="assets/project-modbus.svg" alt="Modbus on 8051: Serial communication · Modbus ASCII" width="270" height="68" /></a>
+<a href="https://github.com/Grkila/Husarion-panther-sim-setup"><img src="assets/project-ros.svg" alt="Panther simulation: ROS 2 setup · Docker" width="270" height="68" /></a>
+</p>
 
 ## A bit about me
 
