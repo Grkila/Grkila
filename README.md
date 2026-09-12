@@ -12,7 +12,7 @@ At CERN, I spent June to August 2026 building an OPC UA PubSub publisher, PLC ti
 <a href="https://github.com/Grkila?tab=repositories"><img src="assets/button-github.svg" alt="GitHub repositories" height="38" /></a>
 </p>
 
-<img src="assets/engineering-banner.svg" alt="Animated robotics, PLC scanning, microcontroller signals, and an LLM network." width="100%" />
+<img src="assets/engineering-four-panels.svg" alt="Animated robotics, PLC scanning, microcontroller signals, and an LLM network." width="100%" />
 
 [CERN technical report](https://repository.cern/records/b6jfa-g7j31)
 
