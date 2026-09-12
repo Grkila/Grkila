@@ -1,12 +1,42 @@
-# Hi, I'm Dušan
+# Hi, I'm Dušan Grković
 
-I build embedded systems, robots, and the software around them. Here are some of my projects in controls, simulation, and AI.
+I'm an electrical and computer engineer who works across embedded systems, robotics, and industrial automation. I build firmware and electronics, then develop the software to measure, test, and control them.
 
-[LinkedIn](https://linkedin.com/in/dusan-grkovic) · [Email](mailto:dusangrkovic2002@gmail.com) · [GitHub](https://github.com/Grkila?tab=repositories)
+My projects range from a magnetic slip-sensing gripper to EV charging simulations and AI applications. I like work where software has a clear connection to the physical system.
 
-<img src="assets/engineering-banner.svg" alt="Embedded systems and robotics: an animated engineering sketch with a robot arm and signal trace." width="100%" />
+At CERN, I spent June to August 2026 building an OPC UA PubSub publisher, PLC timing tools, and a UNICOS workbook MCP server. I'm now studying for an M.Sc. in Computing and Control Engineering at the University of Novi Sad.
 
-I spent June to August 2026 at CERN building an OPC UA PubSub publisher, PLC timing tools, and a UNICOS workbook MCP server. [Technical report](https://repository.cern/records/b6jfa-g7j31).
+<p>
+<a href="https://linkedin.com/in/dusan-grkovic"><img src="assets/button-linkedin.svg" alt="LinkedIn" height="38" /></a>
+<a href="mailto:dusangrkovic2002@gmail.com"><img src="assets/button-email.svg" alt="Email" height="38" /></a>
+<a href="https://github.com/Grkila?tab=repositories"><img src="assets/button-github.svg" alt="GitHub repositories" height="38" /></a>
+</p>
+
+<img src="assets/engineering-banner.svg" alt="Animated robotics, PLC scanning, microcontroller signals, and an LLM network." width="100%" />
+
+[CERN technical report](https://repository.cern/records/b6jfa-g7j31)
+
+<details>
+<summary><strong>Show more: technologies and tools I use</strong></summary>
+
+These cover my independent builds, team projects, and university coursework.
+
+| Area | Technologies and tools |
+| --- | --- |
+| Languages | C, C++, Python, TypeScript, Java, C#, MATLAB, Bash, VHDL, SCL, Ladder Logic |
+| Embedded systems | ESP32, STM32, AT89C51RC2 / 8051, FPGA, FreeRTOS, interrupts, GPIO, PWM, ADC/DAC, bare-metal firmware |
+| Industrial automation | Siemens S7-1200 / S7-1500, TIA Portal, WinCC, UNICOS-CPC / UCPC, PLC programming, SCADA |
+| Control and simulation | PID, fuzzy PID, sliding-mode control, MATLAB/Simulink, LabVIEW, real-time control, system modeling, FFT, signal filtering |
+| Robotics | ROS 2 Jazzy, Gazebo, NVIDIA Isaac Sim, NI sbRIO / cRIO, sensor fusion, IMU-based heading control, FOC BLDC drives |
+| Communications | OPC UA PubSub / UADP, Modbus ASCII, CAN, MQTT, Ethernet, TCP/IP, UDP, Wi-Fi, Bluetooth, ESP-NOW, UART, SPI, I2C |
+| Testing and measurement | HIL, SIL, Python test automation, data acquisition, live telemetry, data logging, PLC timing, JTAG, oscilloscopes, logic analyzers, Wireshark / Tshark |
+| Electronics and mechanical design | Altium Designer, PCB design, LTspice, Fusion 360, AutoCAD, CAD, FDM 3D printing |
+| Computer vision and data | OpenCV, MediaPipe, NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, PyQt6 |
+| AI and simulation projects | LangGraph, Gemini Live, MCP, Streamlit, pandapower, OpenStreetMap, Gymnasium, Stable-Baselines3, PyTorch |
+| Applications and storage | WPF, MVVM, Entity Framework, SQL Server / LocalDB, SQLite, Firebase |
+| Development tools | Git, GitLab, SVN, Docker, Linux, VS Code, VS Code extensions, Keil uVision, Arduino tooling, Android Studio, Quartus Prime, cloud deployment |
+
+</details>
 
 ## Project showcase
 
@@ -75,6 +105,6 @@ I spent June to August 2026 at CERN building an OPC UA PubSub publisher, PLC tim
 
 ## A bit about me
 
-I'm studying for an M.Sc. in Computing and Control Engineering at the University of Novi Sad. I led NSpace's embedded and robotics sub-team at ERC 2025, where we placed seventh in the Remote Formula.
+I led NSpace's embedded and robotics sub-team at ERC 2025, where we placed seventh in the Remote Formula.
 
 My gripper thesis received a departmental nomination for the Pupin Award. I also received the Dositeja Scholarship.

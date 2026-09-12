@@ -11,13 +11,14 @@ The project images come from the linked repositories. They show the existing sof
 | `manipulator-panel.jpg` | [LabVIEW front panel](https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control/blob/main/docs/images/front_panel_overview.jpeg) |
 | `scada-monitor.png` | [SCADA monitoring screenshot](https://github.com/Grkila/SCADA-Industrial-Automation-Assignment/blob/master/Screenshots/Monitor-tab.png) |
 | `motion-analyzer.png` | [Motion analysis screenshot](https://github.com/Grkila/Differential-Motion-Analyzer/blob/main/screenshots/3_detection_in_progress_using_camera.png) |
-| `engineering-banner.svg` | Original animated robot arm and signal trace. The illustration does not show measured data. |
+| `engineering-banner.svg` | Original animated panels for robotics, PLC scanning, microcontroller signals, and an LLM network. These are concept diagrams. |
+| `button-linkedin.svg`, `button-email.svg`, `button-github.svg` | Original static contact buttons. The README links each image to its named destination. |
 | `silverone-flow.svg` | Original concept diagram of voice input and device actions. It is not an application screenshot. |
 | `intro-paths.svg` | Original concept diagram of ranked introduction paths. It is not an application screenshot. |
 
 The GIF uses seconds 3.2 to 11.2 of the accelerated source footage. It preserves that playback speed and uses 8 frames per second, a 420-pixel width, and a 96-color palette. It pauses for three seconds before each repeat. Screenshots are scaled to fit a 480-by-270 frame, with padding that preserves their proportions.
 
-The README selects the still image when the browser requests reduced motion. All three SVGs disable their CSS animations for that preference. The header uses a slow 12-second movement cycle. The two concept diagrams use small, local movements.
+The README selects the still image when the browser requests reduced motion. All three animated SVGs disable their CSS animations for that preference. The banner uses slow cycles of six to twelve seconds. PLC scanning, status LEDs, microcontroller signals, and LLM tokens move independently. Contact buttons are static.
 
 To regenerate the GIF with FFmpeg, download the linked source as `gripper-source.gif`, then run:
 
