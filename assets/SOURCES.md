@@ -35,3 +35,5 @@ The following READMEs informed the choice of a compact gallery and self-containe
 - [Awesome GitHub Profile](https://github.com/beydemirfurkan/awesome-github-profile): compact layouts and project-focused examples.
 
 The `project-siemens.svg`, `project-modbus.svg`, and `project-ros.svg` buttons are original static SVG drawings with short project descriptions.
+
+Additional original static SVG buttons: `project-stock.svg`, `project-diabetes.svg`, and `project-husarion.svg`. Descriptions use the Stock-price-prediction and Diabetes-prediction-using-machine-learning READMEs, and the husarion_ws source tree (ROS 2 controllers and Gazebo packages). The workspace button describes the assembled stack without claiming authorship of upstream packages.

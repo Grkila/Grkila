@@ -107,6 +107,9 @@ These cover my independent builds, team projects, and university coursework.
 <a href="https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects"><img src="assets/project-siemens.svg" alt="Siemens S7: PLC programming · TIA Portal" width="270" height="68" /></a>
 <a href="https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller"><img src="assets/project-modbus.svg" alt="Modbus on 8051: Serial communication · Modbus ASCII" width="270" height="68" /></a>
 <a href="https://github.com/Grkila/Husarion-panther-sim-setup"><img src="assets/project-ros.svg" alt="Panther simulation: ROS 2 setup · Docker" width="270" height="68" /></a>
+<a href="https://github.com/Grkila/Stock-price-prediction"><img src="assets/project-stock.svg" alt="Stock indicators: MATLAB · Time-series features" width="270" height="68" /></a>
+<a href="https://github.com/Grkila/Diabetes-prediction-using-machine-learning"><img src="assets/project-diabetes.svg" alt="Diabetes classification: Python · Ensemble model experiments" width="270" height="68" /></a>
+<a href="https://github.com/Grkila/husarion_ws"><img src="assets/project-husarion.svg" alt="Husarion workspace: ROS 2 · Controllers and Gazebo" width="270" height="68" /></a>
 </p>
 
 ## A bit about me

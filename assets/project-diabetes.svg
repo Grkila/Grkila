@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="68" viewBox="0 0 270 68" role="img" aria-labelledby="title desc">
+<title id="title">Diabetes classification</title><desc id="desc">Python · Ensemble model experiments. Open the project repository.</desc>
+<rect x=".5" y=".5" width="269" height="67" rx="9" fill="#111b26" stroke="#344352"/>
+<g transform="translate(15 19)" fill="none" stroke="#79c8cb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="15" r="3"/><circle cx="24" cy="5" r="3"/><circle cx="24" cy="15" r="3"/><circle cx="24" cy="25" r="3"/><path d="M8 15h7M15 5v20M15 5h6M15 15h6M15 25h6"/></g>
+<g font-family="Segoe UI,Arial,sans-serif"><text x="57" y="27" fill="#edf2f7" font-size="14" font-weight="600">Diabetes classification</text><text x="57" y="47" fill="#b4c2d0" font-size="10.5">Python · Ensemble model experiments</text></g>
+<path d="M248 17h6v6M247 24l7-7" fill="none" stroke="#91a4b5" stroke-width="1.3" stroke-linecap="round"/>
+</svg>
