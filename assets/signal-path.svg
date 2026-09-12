@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="108" viewBox="0 0 960 108" role="img" aria-labelledby="title desc">
+  <title id="title">Sense, control, act</title>
+  <desc id="desc">A small signal travels through a control path once, then stops. Motion is disabled when reduced motion is requested.</desc>
+  <style>
+    .bg{fill:#f6f8fa}.line{stroke:#d1d9e0}.node{fill:#fff;stroke:#96a6b5}.label{fill:#435569}.accent{stroke:#167d8d}.dot{fill:#167d8d}
+    .signal{stroke-dasharray:26 850;stroke-dashoffset:26;animation:travel 4s ease-in-out 1 forwards}
+    @keyframes travel{0%{stroke-dashoffset:26;opacity:0}10%{opacity:1}85%{opacity:1}100%{stroke-dashoffset:-824;opacity:0}}
+    @media(prefers-color-scheme:dark){.bg{fill:#161b22}.line{stroke:#354250}.node{fill:#161b22;stroke:#65798e}.label{fill:#b5c4d3}.accent{stroke:#62c4c8}.dot{fill:#62c4c8}}
+    @media(prefers-reduced-motion:reduce){.signal{animation:none;display:none}}
+  </style>
+  <rect class="bg" width="960" height="108" rx="12"/>
+  <path class="line" d="M54 40H906" fill="none" stroke-width="2"/>
+  <path class="accent signal" d="M54 40H906" fill="none" stroke-width="3" stroke-linecap="round"/>
+  <g stroke-width="2">
+    <circle class="node" cx="150" cy="40" r="13"/><circle class="node" cx="480" cy="40" r="13"/><circle class="node" cx="810" cy="40" r="13"/>
+  </g>
+  <g class="dot"><circle cx="150" cy="40" r="4"/><circle cx="480" cy="40" r="4"/><circle cx="810" cy="40" r="4"/></g>
+  <g class="label" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="18" text-anchor="middle">
+    <text x="150" y="83">SENSE</text><text x="480" y="83">CONTROL</text><text x="810" y="83">ACT</text>
+  </g>
+</svg>

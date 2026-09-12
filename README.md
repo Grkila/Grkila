@@ -1,197 +1,114 @@
-# 👋 Hi, I'm Dušan Grković
+# Hi, I'm Dušan Grković
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E86AB&center=true&vCenter=true&width=500&lines=Electrical+%26+Computer+Engineer;Passionate+About+Embedded+Systems;Exploring+Robotics+%26+Automation" alt="Typing SVG" />
-</div>
+I build embedded systems, robotics projects, and software for industrial automation. That includes firmware, custom electronics, and tools to test how they work together.
 
-<p align="center">
-  <a href="https://linkedin.com/in/du%C5%A1an-grkovi%C4%87-338074b3/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:dusangrkovic2002@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://github.com/Grkila"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="https://grkila.github.io/my-cv/CV"><img src="https://img.shields.io/badge/CV-Download-FF6B6B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="CV"/></a>
-</p>
+My newer projects explore EV charging simulation and AI applications. The hardware is still a big part of what I do.
 
----
-## **About Me**
----
-I am an Electrical and Computer Engineering graduate (B.El.Comp.Eng. Hons) with a passion for robotics, embedded systems, and industrial automation. I recently completed my undergraduate studies with a 9.11/10 GPA (Oct 2021 - Dec 2025), specializing in mechatronics and control systems.
-My expertise spans the full stack of robotic development: from mechanical design (FDM 3D printing) and PCB layout to firmware (FreeRTOS, ESP32, STM32) and control algorithms (PID, Fuzzy, FFT-based signal analysis). Key projects include my thesis on an adaptive gripper with micro-vibration slip detection and SIL/HIL simulations for robot manipulators.
-My leadership experience as Head Organizer for EESTEC LC Novi Sad has equipped me with valuable project management and teamwork skills. I am proficient in C/C++, Python, MATLAB, and various industry-standard tools.
-I'm always looking for the next challenge in robotics or control systems. If you're working on something exciting in automation or just want to talk tech, feel free to connect!
+[LinkedIn](https://linkedin.com/in/dusan-grkovic) · [Email](mailto:dusangrkovic2002@gmail.com) · [All repositories](https://github.com/Grkila?tab=repositories)
+
+<img src="assets/signal-path.svg" alt="A signal path connects sensing, control, and action." width="100%" />
+
+## Recently
+
+I spent June to August 2026 at CERN as a summer student in industrial communications. I built and tested an OPC UA PubSub publisher for the UNICOS control framework.
+
+The work also included a VS Code extension for PLC execution timing and a TypeScript MCP server for UNICOS specification workbooks. I analyzed 706 cooling and ventilation specifications across 20 device families to inform the publisher design.
+
+[CERN technical report](https://repository.cern/records/b6jfa-g7j31)
+
+I'm also studying for an M.Sc. in Computing and Control Engineering at the University of Novi Sad, which I started in December 2025.
+
+## Selected projects
+
+### GridLab · EV charging and grid simulation
+
+GridLab lets you build a charging scenario, compare controllers, and inspect demand on the grid.
+
+Our team built it for the Schneider Electric EV Days Challenge. It combines OpenStreetMap data with pandapower and includes reinforcement learning experiments. Model Context Protocol (MCP) tools connect the simulator to Codex workflows.
+
+The network is a synthetic model of the Novi Sad grid. Its results depend on the scenario and grid assumptions.
+
+<a href="https://github.com/Grkila/gridlab-ev-grid-simulator">
+  <img src="assets/gridlab-dashboard.png" alt="GridLab results show city demand, EV charging demand, and vehicle states at a selected time." width="680" />
+</a>
+
+Python · pandapower · OpenStreetMap · Reinforcement learning · MCP
+
+[Explore the project](https://github.com/Grkila/gridlab-ev-grid-simulator) · [Application tour](https://github.com/Grkila/gridlab-ev-grid-simulator#application-tour)
+
+### Adaptive gripper · Detecting slip with a magnetic sensor
+
+For my bachelor's thesis, I built a gripper that detects early slip through micro-vibrations and adjusts its grip force.
+
+I developed the electronics, ESP32 firmware, and Python telemetry app. I also adapted the mechanical design to integrate a TLV493D magnetic sensor.
+
+The system samples at 2 kHz and analyzes vibrations in the 40-120 Hz band. The documented minimum reaction time is about 90 ms.
+
+<a href="https://www.youtube.com/watch?v=gOe6JvAW2Xo">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/gripper-still.png" />
+    <img src="assets/gripper-demo.gif" alt="The physical gripper holds a balloon while the telemetry app shows sensor signals and slip status." width="420" />
+  </picture>
+</a>
+
+<sub>Excerpt from the accelerated test footage. The GIF plays once. Select the image for the full video.</sub>
+
+ESP32 · FreeRTOS · FFT · Custom PCBs · Python · Fusion 360
+
+[Code and hardware](https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection) · [Watch the demo](https://www.youtube.com/watch?v=gOe6JvAW2Xo) · [Test results](https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection#test-results)
+
+### Rover control and robot simulation
+
+| Airlock control and HIL testing | Two-joint robot manipulator |
+| --- | --- |
+| [![Airlock simulator with rover zones, gate states, and serial monitoring.](assets/airlock-testbench.png)](https://github.com/Grkila/Airlock-Control-System-HIL-Testbench) | [![LabVIEW panel for the robot manipulator simulation and controller settings.](assets/manipulator-panel.jpg)](https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control) |
+| I built ESP32 firmware and a Python testbench for a three-zone rover airlock. The hardware-in-the-loop (HIL) setup emulates sensors and checks controller outputs. | I modeled a two-joint arm and compared PID, fuzzy PID, and sliding-mode control. The project includes a Python hand-tracking interface that sends commands to LabVIEW over UDP. |
+| C++ · ESP32 · Python · HIL | LabVIEW · Python · MediaPipe · Control systems |
+| [Code and testbench](https://github.com/Grkila/Airlock-Control-System-HIL-Testbench) | [Code and documentation](https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control) |
+
+I led NSpace's embedded software and robotics sub-team for ERC 2025. We placed seventh out of 25 teams in the Remote Formula.
+
+The rover work also included a [Docker environment for ROS 2 and Gazebo](https://github.com/Grkila/Husarion-panther-sim-setup) and cloud deployment of NVIDIA Isaac Sim.
+
+## AI applications
+
+- **[SilverOne](https://github.com/Grkila/gdg-accessibility-agent):** An Android assistant for voice and text control. It uses Gemini Live, a deterministic tool dispatcher, and fallback paths when services fail. Java · Android · Gemini Live · Firebase.
+- **[Intro Path Discovery](https://github.com/Grkila/Intro-Path-Discovery):** An application that finds and ranks introduction paths through LinkedIn connection data. It combines language agents with explicit scoring rules. Python · LangGraph · Streamlit · SQLite.
+
+Both links point to forks of shared projects. Their repositories contain the source and upstream history.
+
+## More projects
+
+| Project | What it does |
+| --- | --- |
+| [SCADA application](https://github.com/Grkila/SCADA-Industrial-Automation-Assignment) | Academic C# and WPF application with simulated PLC data, alarms, and SQL-backed history. |
+| [Siemens S7 programming](https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects) | S7-1200 exercises in TIA Portal, with project files and lab documentation. |
+| [Modbus ASCII on 8051](https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller) | Bare-metal C implementation with UART interrupts, LRC checks, and read/write operations on coils and registers. |
+| [Differential Motion Analyzer](https://github.com/Grkila/Differential-Motion-Analyzer) | PyQt6 and OpenCV desktop app with motion detection, region selection, and annotated video export. |
 
 <details>
-<summary>
-  <h2 style="display: inline;"><strong>Read More</strong></h2>
-</summary>
+<summary>Earlier work in data analysis</summary>
 
-## **Technical Skills**
-
-### **Programming Languages**
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=c-sharp&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
-![VHDL](https://img.shields.io/badge/VHDL-543978?style=flat-square&logo=xilinx&logoColor=white)
-![Ladder Logic](https://img.shields.io/badge/Ladder_Logic-FF6B35?style=flat-square&logo=ladder&logoColor=white)
-
-### **Tools & Frameworks**
-![Simulink](https://img.shields.io/badge/Simulink-0076A8?style=flat-square&logo=mathworks&logoColor=white)
-![LabVIEW](https://img.shields.io/badge/LabVIEW-FFDB00?style=flat-square&logo=labview&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
-![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
-![Siemens PLC](https://img.shields.io/badge/Siemens_PLC-009999?style=flat-square&logo=siemens&logoColor=white)
-
-### **Technologies**
-![Embedded Systems](https://img.shields.io/badge/Embedded_Systems-FF6B35?style=flat-square&logo=embedded&logoColor=white)
-![FreeRTOS](https://img.shields.io/badge/FreeRTOS-282C34?style=flat-square)
-![PID Control](https://img.shields.io/badge/PID_Control-4CAF50?style=flat-square&logo=control&logoColor=white)
-![Fuzzy Logic](https://img.shields.io/badge/Fuzzy_Logic-9C27B0?style=flat-square&logo=fuzzy&logoColor=white)
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![Bluetooth](https://img.shields.io/badge/Bluetooth-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
-![Wi-Fi](https://img.shields.io/badge/Wi--Fi-00A1C9?style=flat-square&logo=wifi&logoColor=white)
-![Modbus](https://img.shields.io/badge/Modbus-FF6B35?style=flat-square&logo=modbus&logoColor=white)
-![FPGA](https://img.shields.io/badge/FPGA-5C2D91?style=flat-square&logo=xilinx&logoColor=white)
-
-### **Software**
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Keil uVision](https://img.shields.io/badge/Keil_uVision-C51A4A?style=flat-square&logo=arm&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white)
-![Quartus Prime](https://img.shields.io/badge/Quartus_Prime-0071C5?style=flat-square&logo=intel&logoColor=white)
-![AutoCAD](https://img.shields.io/badge/AutoCAD-0696D7?style=flat-square&logo=autodesk&logoColor=white)
-![Fusion 360](https://img.shields.io/badge/Fusion_360-FF6D00?style=flat-square&logo=autodesk&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white)
-
-### **Other**
-![Sensor Fusion](https://img.shields.io/badge/Sensor_Fusion-607D8B?style=flat-square&logo=sensor&logoColor=white)
-![Real-Time Systems](https://img.shields.io/badge/Real--Time_Systems-795548?style=flat-square&logo=realtime&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![PLC Programming](https://img.shields.io/badge/PLC_Programming-009999?style=flat-square&logo=siemens&logoColor=white)
-![CAD](https://img.shields.io/badge/CAD-0696D7?style=flat-square&logo=autodesk&logoColor=white)
-![FDM 3D Printing](https://img.shields.io/badge/FDM_3D_Printing-FF6B6B?style=flat-square&logo=3d&logoColor=white)
-
----
-
-## **Featured Projects**
-
-### **Adaptive Gripper with Micro-Vibration Slip Detection** | *Dec 2025* | [📂 Code](https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection)
-**Impact:** Developed a novel slip detection system using micro-vibration analysis (FFT) and magnetic sensing (Thesis Project).  
-**Tech:** ESP32 (FreeRTOS), TLV493D (3D Hall), FFT Signal Analysis, Python (Telemetry), FDM 3D Printing.  
-**Metrics:** <90ms reaction time, non-destructive handling of fragile objects, robust slip detection in 40-120Hz band.  
-
----
-
-### **Embedded & Robotics Team Lead - NSpace (ERC 2025)** | *May 2025 - Aug 2025* | [📂 Code](https://github.com/NSpaceTeam)
-**Impact:** Secured **7th place globally** (Remote Formula). Architected embedded control systems and development infrastructure for a team of 10 engineers.
-**Key Contributions:**
-- **Airlock System:** [[📂 Repo]](https://github.com/Grkila/Airlock-Control-System-HIL-Testbench) Developed safety-critical C++ firmware (ESP32) with FSMs and a custom HIL Testbench (Python/GUI) to validate logic without physical hardware. Designed serial protocols for high-frequency sensor data.
-- **Infrastructure & DevOps:** [[📂 Repo]](https://github.com/Grkila/Husarion-panther-sim-setup) Standardized dev environment using **Docker** (bundling ROS 2/Gazebo) to eliminate environment issues. Adjusted **Gazebo simulation** to match real-world rover physics and sensor noise. Deployed **NVIDIA Isaac Sim** on cloud infrastructure for high-performance photorealistic physics simulations.
-
-- **Tech:** ESP32, C++, Python, Docker, NVIDIA Isaac Sim, ROS 2, Serial Protocol
-
----
-
-### **Two-Joint Robot Manipulator Control** | *Nov 2024* | [📂 Code](https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control)
-**Impact:** Improved robotic arm tracking precision by 25% vs standard PID  
-**Tech:** MATLAB/Simulink, LabVIEW, FPGA,Software-in-loop, Hardware-in-Loop Testing  
-**Metrics:** <2° error in trajectory tracking, 50ms response time  
-
----
-
-### **High-Frequency Trading System** | *June 2025 - Hackathon*
-**Impact:** Managed $1M virtual portfolio, achieved 15% ROI in 24 hours  
-**Tech:** WebSocket API, Raspberry Pi, JavaScript, Derivatives Trading  
-**Metrics:** <10ms latency, processed 1000+ trades/hour  
-
----
-
-### **Smart Parking Detection System** | *Sep 2024* |
-**Impact:** 92% accuracy in real-time parking space detection  
-**Tech:** Python, OpenCV, Flask, RESTful API  
-**Metrics:** Processes 30 FPS video stream, <100ms detection time  
-
----
-
-### **Machine Learning Diabetes Prediction** | *Nov 2023* | [📂 Code](https://github.com/Grkila/Diabetes-prediction-using-machine-learning)
-**Impact:** Healthcare prediction system achieving ~90% accuracy using ensemble learning  
-**Tech:** Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn  
-**Metrics:** 5-fold cross-validation, F1 score optimization, comprehensive ROC analysis with multiple ensemble models  
-
----
-
-### **Bare-Metal Modbus Protocol Implementation** | *Apr 2024* | [📂 Code](https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller)
-**Impact:** Reliable industrial communication in resource-constrained embedded systems  
-**Tech:** Intel 8051, C Programming, Keil uVision, Modbus RTU, LRC Error Checking  
-**Metrics:** Supports multiple function codes (Read Coils, Holding Registers), optimized for minimal memory footprint  
-
----
-
-
-
-## **Recent Achievements**
-
-| Year | Achievement | Impact |
-|------|-------------|---------|
-| 2025 | 7th Place Global, ERC 2025 (Remote) | Embedded & Robotics Team Lead, NSpace |
-| 2025 | EESTEC Challenge Local Round Winner | Engineering innovation competition |
-| 2025 | Altium PCB Design Certified | Professional PCB design skills |
-| 2024 | NVIDIA Deep Learning Certified | AI/ML technical competency |
-| 2023 | Origin's EV Case Study Winner | Electric vehicle systems innovation |
-| 2022-23 | HR Team Lead, EESTEC LC Novi Sad | Led 20+ member HR team |
-
----
-
-## **Education**
-
-**B.El.Comp.Eng. (Honours)** | *Faculty of Technical Sciences, Novi Sad* | *2021 - 2025*  
-*GPA: 9.11/10 | Relevant: Robotics, Embedded Systems, Industrial Automation, Machine Learning, Signal Processing*
-
-**Harvard CS50** | *Computer Science Fundamentals* | *2022*
-
----
-
-## **GitHub Activity**
-
-<div align="center">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=Grkila&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Grkila&layout=compact&langs_count=6&theme=dark"/>
-</div>
-
----
-
-## **Seeking Opportunities In:**
-
-<div align="center">
-
-| **Embedded Systems Intern** | **Control Systems Projects** | **Robotics Research** | **Industrial Automation** |
-|:---------------------:|:-------------------:|:------------------:|:----------------------:|
-| Microcontroller programming | PID/Fuzzy control design | Robot control algorithms | PLC programming basics |
-| STM32/ESP32 development | MATLAB/Simulink modeling | Hardware-software integration | Industrial communication |
-| Real-time systems | System identification | Sensor fusion applications | Process control learning |
-
-</div>
-
----
-
-## **Let's Connect and Learn Together!**
-
-<div align="center">
-  <p><strong>Eager to apply my passion for embedded systems and control engineering in real-world projects</strong></p>
-  <p><em>Seeking internships, research opportunities, and collaborative projects</em> | <em>Open to learning and growth</em></p>
-  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_Now-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/du%C5%A1an-grkovi%C4%87-338074b3/)
-  [![Email](https://img.shields.io/badge/Email-dusangrkovic2002@gmail.com-D14836?style=for-the-badge&logo=gmail)](mailto:dusangrkovic2002@gmail.com)
-  [![CV](https://img.shields.io/badge/CV-View_Full_Resume-FF6B6B?style=for-the-badge&logo=adobeacrobatreader)](https://grkila.github.io/my-cv/CV)
-</div>
-
----
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Grkila&style=flat-square&color=blue" alt="Profile Views"/>
-  <br>
-  <sub>From [Grkila](https://github.com/Grkila) | Exploring the Future of Automation, One Project at a Time</sub>
-</div>
+- [Diabetes prediction](https://github.com/Grkila/Diabetes-prediction-using-machine-learning): data preparation, ensemble models, and classification evaluation.
+- [Financial indicator analysis](https://github.com/Grkila/Stock-price-prediction): MATLAB scripts that prepare technical indicators and features from market data.
 
 </details>
+
+## Tools I use
+
+| Area | Tools and methods |
+| --- | --- |
+| Embedded systems | C/C++, ESP32, STM32, FreeRTOS, I2C/SPI/UART, Altium Designer |
+| Industrial automation | Siemens S7, TIA Portal, UNICOS-CPC, OPC UA PubSub, SCADA, C#/WPF |
+| Robotics and control | LabVIEW, MATLAB/Simulink, ROS 2, Gazebo, Isaac Sim, PID, fuzzy control, sliding-mode control |
+| Software and testing | Python, TypeScript, Git, Docker, Linux, OpenCV, HIL and SIL testing |
+
+## A little background
+
+I graduated from the University of Novi Sad in December 2025 with a B.Sc. with Honours in Electrical and Computer Engineering. My GPA was 9.11/10.
+
+My department nominated my gripper thesis for Matica srpska's Pupin Award. I also received the Dositeja Scholarship.
+
+Other highlights include first place at the 2025 EESTech Challenge local round and the 2023 Origin Case Study. Outside technical projects, I led the EESTEC LC Novi Sad HR team and helped organize its events.
+
+If you're working on robotics, controls, or a related project, [send me an email](mailto:dusangrkovic2002@gmail.com).
