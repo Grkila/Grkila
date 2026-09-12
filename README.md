@@ -112,8 +112,15 @@ These cover my independent builds, team projects, and university coursework.
 <a href="https://github.com/Grkila/husarion_ws"><img src="assets/project-husarion.svg" alt="Husarion workspace: ROS 2 · Controllers and Gazebo" width="270" height="68" /></a>
 </p>
 
-## A bit about me
+## My story
 
-I led NSpace's embedded and robotics sub-team at ERC 2025, where we placed seventh in the Remote Formula.
+Alongside my studies in Novi Sad, I spent time building teams as well as engineering projects. Through EESTEC, I led a 20-person team and organized events, including a three-day student conference.
 
-My gripper thesis received a departmental nomination for the Pupin Award. I also received the Dositeja Scholarship.
+For my bachelor's thesis, I built a gripper from the mechanical parts and custom PCB through to the firmware and test rig. That project brought electronics, mechanics, and control software together. My later work at CERN took me into industrial communications, with an OPC UA PubSub implementation for UNICOS.
+
+## Achievements
+
+- **EESTech Challenge, Novi Sad:** our team, CMD.exe, won the local round with a Raspberry Pi temperature-control system.
+- **European Rover Challenge 2025:** NSpace placed seventh in the Remote Formula. I led the embedded and robotics sub-team.
+- **Pupin Award nomination:** my gripper thesis received a departmental nomination.
+- **Dositeja Scholarship:** recipient.
