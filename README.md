@@ -117,17 +117,31 @@ These cover my independent builds, team projects, and university coursework.
 
 </details>
 
-<img src="assets/engineering-four-panels.svg" alt="Animated robotics, PLC scanning, microcontroller signals, and an LLM network." width="100%" />
-
 ## My story
 
-Alongside my studies in Novi Sad, I spent time building teams as well as engineering projects. Through EESTEC, I led a 20-person team and organized events, including a three-day student conference.
+I like building teams as much as building hardware. Each chapter below added something new: leading people, shipping a full system, competing in the field, and then industrial work at CERN.
 
-For my bachelor's thesis, I built a gripper from the mechanical parts and custom PCB through to the firmware and test rig. That project brought electronics, mechanics, and control software together. My later work at CERN took me into industrial communications, with an OPC UA PubSub implementation for UNICOS.
+<img src="assets/story-route.svg" alt="My path so far: Teams, Build, Field, Industry, and Now, connected by a circuit trace." width="100%" />
 
-## Achievements
-
-- **EESTech Challenge, Novi Sad:** our team, CMD.exe, won the local round with a Raspberry Pi temperature-control system.
-- **European Rover Challenge 2025:** NSpace placed seventh in the Remote Formula. I led the embedded and robotics sub-team.
-- **Pupin Award nomination:** my gripper thesis received a departmental nomination.
-- **Dositeja Scholarship:** recipient.
+<table>
+<tr>
+<td width="24%" valign="top"><b>01 · Teams</b><br><sub>EESTEC Novi Sad</sub></td>
+<td valign="top">I led a 20-person team and organized events, including a three-day student conference. Our team, CMD.exe, <b>won the local EESTech Challenge</b> with a Raspberry Pi temperature-control system.</td>
+</tr>
+<tr>
+<td valign="top"><b>02 · Build</b><br><sub>Bachelor's thesis</sub></td>
+<td valign="top">I built an <a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection">adaptive gripper</a> end to end: mechanics, custom PCB, ESP32 firmware, and test rig. It received a <b>departmental Pupin Award nomination</b>.</td>
+</tr>
+<tr>
+<td valign="top"><b>03 · Field</b><br><sub>NSpace rover team</sub></td>
+<td valign="top">I led the embedded and robotics sub-team. NSpace placed <b>seventh in the Remote Formula at the European Rover Challenge 2025</b>.</td>
+</tr>
+<tr>
+<td valign="top"><b>04 · Industry</b><br><sub>CERN, summer 2026</sub></td>
+<td valign="top">I worked on industrial communications: an <b>OPC UA PubSub publisher for UNICOS</b>, PLC timing tools, and a workbook MCP server. The publisher is covered in my <a href="https://repository.cern/records/b6jfa-g7j31">technical report</a>.</td>
+</tr>
+<tr>
+<td valign="top"><b>05 · Now</b><br><sub>University of Novi Sad</sub></td>
+<td valign="top">I'm studying for an M.Sc. in Computing and Control Engineering. I'm also a <b>Dositeja Scholarship</b> recipient.</td>
+</tr>
+</table>

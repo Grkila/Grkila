@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200" role="img" aria-labelledby="title desc">
+<title id="title">My path so far</title>
+<desc id="desc">A circuit trace connects five chapters: Teams (EESTEC and an EESTech Challenge win), Build (the gripper thesis), Field (NSpace at the European Rover Challenge 2025), Industry (CERN in 2026), and Now (an M.Sc. in Novi Sad). A signal travels along the trace and lights each chapter in turn.</desc>
+<style>.lab{font-family:"Segoe UI",Arial,sans-serif;font-size:19px;font-weight:600;fill:#e9eef3}.sub{font-family:Consolas,Menlo,monospace;font-size:12.5px;fill:#93a4b5}.num{font-family:Consolas,Menlo,monospace;font-size:11px;font-weight:700}.sig{stroke-dasharray:70 2009;animation:sig 8s linear infinite}@keyframes sig{0%{stroke-dashoffset:70}75%,100%{stroke-dashoffset:-1005}}.halo{opacity:0;transform-box:fill-box;transform-origin:center}.now{animation:now 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center}@keyframes now{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.6);opacity:0}}.h0{animation:h0 8s linear infinite}@keyframes h0{0%,5.5%{opacity:0;transform:scale(.6)}7.5%{opacity:1;transform:scale(1)}20.0%,100%{opacity:0;transform:scale(1.6)}}.h1{animation:h1 8s linear infinite}@keyframes h1{0%,20.0%{opacity:0;transform:scale(.6)}22.0%{opacity:1;transform:scale(1)}34.5%,100%{opacity:0;transform:scale(1.6)}}.h2{animation:h2 8s linear infinite}@keyframes h2{0%,34.6%{opacity:0;transform:scale(.6)}36.6%{opacity:1;transform:scale(1)}49.1%,100%{opacity:0;transform:scale(1.6)}}.h3{animation:h3 8s linear infinite}@keyframes h3{0%,49.1%{opacity:0;transform:scale(.6)}51.1%{opacity:1;transform:scale(1)}63.6%,100%{opacity:0;transform:scale(1.6)}}.h4{animation:h4 8s linear infinite}@keyframes h4{0%,63.6%{opacity:0;transform:scale(.6)}65.6%{opacity:1;transform:scale(1)}78.1%,100%{opacity:0;transform:scale(1.6)}}@media (prefers-reduced-motion:reduce){.sig,.now,.h0,.h1,.h2,.h3,.h4{animation:none!important}.sig{opacity:0}}</style>
+<rect x=".5" y=".5" width="959" height="199" rx="12" fill="#0b131b" stroke="#22313f"/>
+<path d="M24 92 L110 92 L138 64 L267 64 L295 92 L323 64 L452 64 L480 92 L508 64 L637 64 L665 92 L693 64 L822 64 L850 92 L936 92" fill="none" stroke="#22313f" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M24 92 L110 92 L138 64 L267 64 L295 92 L323 64 L452 64 L480 92 L508 64 L637 64 L665 92 L693 64 L822 64 L850 92 L936 92" fill="none" stroke="#79c8cb" stroke-opacity=".35" stroke-width="2" stroke-linejoin="round"/>
+<path class="sig" d="M24 92 L110 92 L138 64 L267 64 L295 92 L323 64 L452 64 L480 92 L508 64 L637 64 L665 92 L693 64 L822 64 L850 92 L936 92" fill="none" stroke="#f0b35a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="24" cy="92" r="4" fill="none" stroke="#79c8cb" stroke-opacity=".6" stroke-width="1.5"/>
+<circle cx="936" cy="92" r="4" fill="none" stroke="#f0b35a" stroke-opacity=".6" stroke-width="1.5"/>
+<circle class="halo h0" cx="110" cy="92" r="20" fill="#79c8cb" fill-opacity=".18" stroke="#79c8cb" stroke-opacity=".6"/>
+<circle cx="110" cy="92" r="12" fill="#0b131b" stroke="#79c8cb" stroke-width="2.5"/>
+<circle cx="110" cy="92" r="4.5" fill="#79c8cb"/>
+<text class="num" x="110" y="66" text-anchor="middle" fill="#79c8cb">01</text>
+<text class="lab" x="110" y="140" text-anchor="middle">Teams</text>
+<text class="sub" x="110" y="162" text-anchor="middle">EESTEC · EESTech win</text>
+<circle class="halo h1" cx="295" cy="92" r="20" fill="#97c3af" fill-opacity=".18" stroke="#97c3af" stroke-opacity=".6"/>
+<circle cx="295" cy="92" r="12" fill="#0b131b" stroke="#97c3af" stroke-width="2.5"/>
+<circle cx="295" cy="92" r="4.5" fill="#97c3af"/>
+<text class="num" x="295" y="66" text-anchor="middle" fill="#97c3af">02</text>
+<text class="lab" x="295" y="140" text-anchor="middle">Build</text>
+<text class="sub" x="295" y="162" text-anchor="middle">Gripper thesis</text>
+<circle class="halo h2" cx="480" cy="92" r="20" fill="#b4be92" fill-opacity=".18" stroke="#b4be92" stroke-opacity=".6"/>
+<circle cx="480" cy="92" r="12" fill="#0b131b" stroke="#b4be92" stroke-width="2.5"/>
+<circle cx="480" cy="92" r="4.5" fill="#b4be92"/>
+<text class="num" x="480" y="66" text-anchor="middle" fill="#b4be92">03</text>
+<text class="lab" x="480" y="140" text-anchor="middle">Field</text>
+<text class="sub" x="480" y="162" text-anchor="middle">NSpace · ERC 2025</text>
+<circle class="halo h3" cx="665" cy="92" r="20" fill="#d2b876" fill-opacity=".18" stroke="#d2b876" stroke-opacity=".6"/>
+<circle cx="665" cy="92" r="12" fill="#0b131b" stroke="#d2b876" stroke-width="2.5"/>
+<circle cx="665" cy="92" r="4.5" fill="#d2b876"/>
+<text class="num" x="665" y="66" text-anchor="middle" fill="#d2b876">04</text>
+<text class="lab" x="665" y="140" text-anchor="middle">Industry</text>
+<text class="sub" x="665" y="162" text-anchor="middle">CERN · 2026</text>
+<circle class="now" cx="850" cy="92" r="12" fill="none" stroke="#f0b35a" stroke-width="2"/>
+<circle class="halo h4" cx="850" cy="92" r="20" fill="#f0b35a" fill-opacity=".18" stroke="#f0b35a" stroke-opacity=".6"/>
+<circle cx="850" cy="92" r="12" fill="#0b131b" stroke="#f0b35a" stroke-width="2.5"/>
+<circle cx="850" cy="92" r="4.5" fill="#f0b35a"/>
+<text class="num" x="850" y="66" text-anchor="middle" fill="#f0b35a">05</text>
+<text class="lab" x="850" y="140" text-anchor="middle">Now</text>
+<text class="sub" x="850" y="162" text-anchor="middle">M.Sc. · Novi Sad</text>
+</svg>
