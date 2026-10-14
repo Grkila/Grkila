@@ -1,12 +1,7 @@
-# Hi, I'm Dušan Grković
-
-I'm an electrical and computer engineer who works across embedded systems, robotics, and industrial automation. I build firmware and electronics, then develop the software to measure, test, and control them.
-
-My projects range from a magnetic slip-sensing gripper to EV charging simulations and AI applications. I like work where software has a clear connection to the physical system.
-
-At CERN, I spent June to August 2026 building an OPC UA PubSub publisher, PLC timing tools, and a UNICOS workbook MCP server. My [CERN technical report](https://repository.cern/records/b6jfa-g7j31) covers the publisher.
-
-I'm now studying for an M.Sc. in Computing and Control Engineering at the University of Novi Sad.
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-arm-still.png" />
+  <img src="assets/hero-arm.webp" alt="Dušan Grković: embedded systems, robotics, and industrial automation. A 3D robot arm moves a part between two stations over a circuit board." width="100%" />
+</picture>
 
 <p>
 <a href="https://linkedin.com/in/dusan-grkovic"><img src="assets/button-linkedin.svg" alt="LinkedIn" height="38" /></a>
@@ -14,29 +9,13 @@ I'm now studying for an M.Sc. in Computing and Control Engineering at the Univer
 <a href="https://github.com/Grkila?tab=repositories"><img src="assets/button-github.svg" alt="GitHub repositories" height="38" /></a>
 </p>
 
-<img src="assets/engineering-four-panels.svg" alt="Animated robotics, PLC scanning, microcontroller signals, and an LLM network." width="100%" />
+I'm an electrical and computer engineer who works across embedded systems, robotics, and industrial automation. I build firmware and electronics, then develop the software to measure, test, and control them.
 
-<details>
-<summary><strong>Show more: technologies and tools I use</strong></summary>
+My projects range from a magnetic slip-sensing gripper to EV charging simulations and AI applications. I like work where software has a clear connection to the physical system.
 
-These cover my independent builds, team projects, and university coursework.
-
-| Area | Technologies and tools |
-| --- | --- |
-| Languages | C, C++, Python, TypeScript, Java, C#, MATLAB, Bash, VHDL, SCL, Ladder Logic |
-| Embedded systems | ESP32, STM32, AT89C51RC2 / 8051, FPGA, FreeRTOS, interrupts, GPIO, PWM, ADC/DAC, bare-metal firmware |
-| Industrial automation | Siemens S7-1200 / S7-1500, TIA Portal, WinCC, UNICOS-CPC / UCPC, PLC programming, SCADA |
-| Control and simulation | PID, fuzzy PID, sliding-mode control, MATLAB/Simulink, LabVIEW, real-time control, system modeling, FFT, signal filtering |
-| Robotics | ROS 2 Jazzy, Gazebo, NVIDIA Isaac Sim, NI sbRIO / cRIO, sensor fusion, IMU-based heading control, FOC BLDC drives |
-| Communications | OPC UA PubSub / UADP, Modbus ASCII, CAN, MQTT, Ethernet, TCP/IP, UDP, Wi-Fi, Bluetooth, ESP-NOW, UART, SPI, I2C |
-| Testing and measurement | HIL, SIL, Python test automation, data acquisition, live telemetry, data logging, PLC timing, JTAG, oscilloscopes, logic analyzers, Wireshark / Tshark |
-| Electronics and mechanical design | Altium Designer, PCB design, LTspice, Fusion 360, AutoCAD, CAD, FDM 3D printing |
-| Computer vision and data | OpenCV, MediaPipe, NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, PyQt6 |
-| AI and simulation projects | LangGraph, Gemini Live, MCP, Streamlit, pandapower, OpenStreetMap, Gymnasium, Stable-Baselines3, PyTorch |
-| Applications and storage | WPF, MVVM, Entity Framework, SQL Server / LocalDB, SQLite, Firebase |
-| Development tools | Git, GitLab, SVN, Docker, Linux, VS Code, VS Code extensions, Keil uVision, Arduino tooling, Android Studio, Quartus Prime, cloud deployment |
-
-</details>
+> [!NOTE]
+> **Now:** M.Sc. in Computing and Control Engineering at the University of Novi Sad.<br>
+> **CERN, June to August 2026:** an OPC UA PubSub publisher, PLC timing tools, and a UNICOS workbook MCP server. My [technical report](https://repository.cern/records/b6jfa-g7j31) covers the publisher.
 
 ## Project showcase
 
@@ -111,6 +90,34 @@ These cover my independent builds, team projects, and university coursework.
 <a href="https://github.com/Grkila/Diabetes-prediction-using-machine-learning"><img src="assets/project-diabetes.svg" alt="Diabetes classification: Python · Ensemble model experiments" width="270" height="68" /></a>
 <a href="https://github.com/Grkila/husarion_ws"><img src="assets/project-husarion.svg" alt="Husarion workspace: ROS 2 · Controllers and Gazebo" width="270" height="68" /></a>
 </p>
+
+## Stack, from silicon to SCADA
+
+<img src="assets/stack-isometric.svg" alt="Six-layer stack: hardware and test, firmware and robotics, networks and protocols, industrial control, supervision and data, and AI and applications." width="100%" />
+
+<details>
+<summary><strong>Full list of technologies and tools</strong></summary>
+
+These cover my independent builds, team projects, and university coursework.
+
+| Area | Technologies and tools |
+| --- | --- |
+| Languages | C, C++, Python, TypeScript, Java, C#, MATLAB, Bash, VHDL, SCL, Ladder Logic |
+| Embedded systems | ESP32, STM32, AT89C51RC2 / 8051, FPGA, FreeRTOS, interrupts, GPIO, PWM, ADC/DAC, bare-metal firmware |
+| Industrial automation | Siemens S7-1200 / S7-1500, TIA Portal, WinCC, UNICOS-CPC / UCPC, PLC programming, SCADA |
+| Control and simulation | PID, fuzzy PID, sliding-mode control, MATLAB/Simulink, LabVIEW, real-time control, system modeling, FFT, signal filtering |
+| Robotics | ROS 2 Jazzy, Gazebo, NVIDIA Isaac Sim, NI sbRIO / cRIO, sensor fusion, IMU-based heading control, FOC BLDC drives |
+| Communications | OPC UA PubSub / UADP, Modbus ASCII, CAN, MQTT, Ethernet, TCP/IP, UDP, Wi-Fi, Bluetooth, ESP-NOW, UART, SPI, I2C |
+| Testing and measurement | HIL, SIL, Python test automation, data acquisition, live telemetry, data logging, PLC timing, JTAG, oscilloscopes, logic analyzers, Wireshark / Tshark |
+| Electronics and mechanical design | Altium Designer, PCB design, LTspice, Fusion 360, AutoCAD, CAD, FDM 3D printing |
+| Computer vision and data | OpenCV, MediaPipe, NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, PyQt6 |
+| AI and simulation projects | LangGraph, Gemini Live, MCP, Streamlit, pandapower, OpenStreetMap, Gymnasium, Stable-Baselines3, PyTorch |
+| Applications and storage | WPF, MVVM, Entity Framework, SQL Server / LocalDB, SQLite, Firebase |
+| Development tools | Git, GitLab, SVN, Docker, Linux, VS Code, VS Code extensions, Keil uVision, Arduino tooling, Android Studio, Quartus Prime, cloud deployment |
+
+</details>
+
+<img src="assets/engineering-four-panels.svg" alt="Animated robotics, PLC scanning, microcontroller signals, and an LLM network." width="100%" />
 
 ## My story
 

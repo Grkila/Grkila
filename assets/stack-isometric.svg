@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Stack, from silicon to SCADA</title>
+<desc id="desc">An isometric stack of six layers, from hardware and test at the bottom to AI and applications at the top, with the main tools for each layer. A signal climbs from the bottom layer to the top.</desc>
+<style>
+.lab{font-family:"Segoe UI",Arial,sans-serif;font-size:15px;font-weight:600;fill:#e9eef3}
+.tech{font-family:Consolas,Menlo,monospace;font-size:11.5px;fill:#93a4b5}
+.code{font-family:Consolas,Menlo,monospace;font-size:11px;font-weight:700}
+.glow{opacity:0;animation:glow 6s ease-in-out infinite}
+@keyframes glow{0%,100%{opacity:0}6%{opacity:1}24%{opacity:0}}
+.pkt{animation:pkt 6s ease-in-out infinite}
+@keyframes pkt{0%{transform:translateY(0);opacity:0}4%{opacity:1}42%{opacity:1}46%{transform:translateY(-290px);opacity:0}100%{transform:translateY(-290px);opacity:0}}
+@keyframes lift0{0%,35%,100%{transform:translateY(0)}60%,80%{transform:translateY(0px)}}
+.lift0{animation:lift0 6s ease-in-out infinite}.glow0{animation-delay:0.00s}
+@keyframes lift1{0%,35%,100%{transform:translateY(0)}60%,80%{transform:translateY(-5px)}}
+.lift1{animation:lift1 6s ease-in-out infinite}.glow1{animation-delay:0.45s}
+@keyframes lift2{0%,35%,100%{transform:translateY(0)}60%,80%{transform:translateY(-10px)}}
+.lift2{animation:lift2 6s ease-in-out infinite}.glow2{animation-delay:0.90s}
+@keyframes lift3{0%,35%,100%{transform:translateY(0)}60%,80%{transform:translateY(-15px)}}
+.lift3{animation:lift3 6s ease-in-out infinite}.glow3{animation-delay:1.35s}
+@keyframes lift4{0%,35%,100%{transform:translateY(0)}60%,80%{transform:translateY(-20px)}}
+.lift4{animation:lift4 6s ease-in-out infinite}.glow4{animation-delay:1.80s}
+@keyframes lift5{0%,35%,100%{transform:translateY(0)}60%,80%{transform:translateY(-25px)}}
+.lift5{animation:lift5 6s ease-in-out infinite}.glow5{animation-delay:2.25s}
+@media (prefers-reduced-motion:reduce){.glow,.lift0,.lift1,.lift2,.lift3,.lift4,.lift5,.pkt{animation:none!important}.pkt{opacity:0}}
+</style>
+<rect x=".5" y=".5" width="959" height="479" rx="12" fill="#0b131b" stroke="#22313f"/>
+<g transform="translate(0 44)">
+<ellipse cx="215" cy="422" rx="146" ry="13" fill="#000" opacity=".4"/>
+<g class="lift0">
+<path d="M95 340L215 400L215 416L95 356Z" fill="#0f1b25" stroke="#79c8cb" stroke-opacity=".35"/>
+<path d="M215 400L335 340L335 356L215 416Z" fill="#0c161f" stroke="#79c8cb" stroke-opacity=".35"/>
+<path d="M215 280L335 340L215 400L95 340Z" fill="#132230" stroke="#79c8cb" stroke-opacity=".75"/>
+<path d="M215 294L307 340L215 386L123 340Z" fill="none" stroke="#79c8cb" stroke-opacity=".2" stroke-dasharray="3 5"/>
+<path class="glow glow0" d="M215 280L335 340L215 400L95 340Z" fill="#79c8cb" fill-opacity=".14" stroke="#79c8cb" stroke-width="2"/>
+<text class="code" x="215" y="388" text-anchor="middle" fill="#79c8cb">L1</text>
+<path d="M343 340H408" stroke="#2f4254" stroke-dasharray="2 4"/>
+<circle cx="414" cy="340" r="3" fill="#79c8cb"/>
+<text class="lab" x="428" y="337">Hardware &amp; test</text>
+<text class="tech" x="428" y="355">Altium · LTspice · HIL / SIL · LabVIEW · NI cRIO</text>
+</g>
+<g class="lift1">
+<path d="M95 284L215 344L215 360L95 300Z" fill="#0f1b25" stroke="#91c4b4" stroke-opacity=".35"/>
+<path d="M215 344L335 284L335 300L215 360Z" fill="#0c161f" stroke="#91c4b4" stroke-opacity=".35"/>
+<path d="M215 224L335 284L215 344L95 284Z" fill="#132230" stroke="#91c4b4" stroke-opacity=".75"/>
+<path d="M215 238L307 284L215 330L123 284Z" fill="none" stroke="#91c4b4" stroke-opacity=".2" stroke-dasharray="3 5"/>
+<path class="glow glow1" d="M215 224L335 284L215 344L95 284Z" fill="#91c4b4" fill-opacity=".14" stroke="#91c4b4" stroke-width="2"/>
+<text class="code" x="215" y="332" text-anchor="middle" fill="#91c4b4">L2</text>
+<path d="M343 284H408" stroke="#2f4254" stroke-dasharray="2 4"/>
+<circle cx="414" cy="284" r="3" fill="#91c4b4"/>
+<text class="lab" x="428" y="281">Firmware &amp; robotics</text>
+<text class="tech" x="428" y="299">C / C++ · FreeRTOS · ESP32 · STM32 · ROS 2 · FPGA</text>
+</g>
+<g class="lift2">
+<path d="M95 228L215 288L215 304L95 244Z" fill="#0f1b25" stroke="#a9c09e" stroke-opacity=".35"/>
+<path d="M215 288L335 228L335 244L215 304Z" fill="#0c161f" stroke="#a9c09e" stroke-opacity=".35"/>
+<path d="M215 168L335 228L215 288L95 228Z" fill="#132230" stroke="#a9c09e" stroke-opacity=".75"/>
+<path d="M215 182L307 228L215 274L123 228Z" fill="none" stroke="#a9c09e" stroke-opacity=".2" stroke-dasharray="3 5"/>
+<path class="glow glow2" d="M215 168L335 228L215 288L95 228Z" fill="#a9c09e" fill-opacity=".14" stroke="#a9c09e" stroke-width="2"/>
+<text class="code" x="215" y="276" text-anchor="middle" fill="#a9c09e">L3</text>
+<path d="M343 228H408" stroke="#2f4254" stroke-dasharray="2 4"/>
+<circle cx="414" cy="228" r="3" fill="#a9c09e"/>
+<text class="lab" x="428" y="225">Networks &amp; protocols</text>
+<text class="tech" x="428" y="243">OPC UA PubSub · Modbus · CAN · MQTT · ESP-NOW</text>
+</g>
+<g class="lift3">
+<path d="M95 172L215 232L215 248L95 188Z" fill="#0f1b25" stroke="#c0bb87" stroke-opacity=".35"/>
+<path d="M215 232L335 172L335 188L215 248Z" fill="#0c161f" stroke="#c0bb87" stroke-opacity=".35"/>
+<path d="M215 112L335 172L215 232L95 172Z" fill="#132230" stroke="#c0bb87" stroke-opacity=".75"/>
+<path d="M215 126L307 172L215 218L123 172Z" fill="none" stroke="#c0bb87" stroke-opacity=".2" stroke-dasharray="3 5"/>
+<path class="glow glow3" d="M215 112L335 172L215 232L95 172Z" fill="#c0bb87" fill-opacity=".14" stroke="#c0bb87" stroke-width="2"/>
+<text class="code" x="215" y="220" text-anchor="middle" fill="#c0bb87">L4</text>
+<path d="M343 172H408" stroke="#2f4254" stroke-dasharray="2 4"/>
+<circle cx="414" cy="172" r="3" fill="#c0bb87"/>
+<text class="lab" x="428" y="169">Industrial control</text>
+<text class="tech" x="428" y="187">S7-1200 / 1500 · TIA Portal · UNICOS · PID · SMC</text>
+</g>
+<g class="lift4">
+<path d="M95 116L215 176L215 192L95 132Z" fill="#0f1b25" stroke="#d8b771" stroke-opacity=".35"/>
+<path d="M215 176L335 116L335 132L215 192Z" fill="#0c161f" stroke="#d8b771" stroke-opacity=".35"/>
+<path d="M215 56L335 116L215 176L95 116Z" fill="#132230" stroke="#d8b771" stroke-opacity=".75"/>
+<path d="M215 70L307 116L215 162L123 116Z" fill="none" stroke="#d8b771" stroke-opacity=".2" stroke-dasharray="3 5"/>
+<path class="glow glow4" d="M215 56L335 116L215 176L95 116Z" fill="#d8b771" fill-opacity=".14" stroke="#d8b771" stroke-width="2"/>
+<text class="code" x="215" y="164" text-anchor="middle" fill="#d8b771">L5</text>
+<path d="M343 116H408" stroke="#2f4254" stroke-dasharray="2 4"/>
+<circle cx="414" cy="116" r="3" fill="#d8b771"/>
+<text class="lab" x="428" y="113">Supervision &amp; data</text>
+<text class="tech" x="428" y="131">SCADA · WinCC · SQL · OpenCV · MediaPipe</text>
+</g>
+<g class="lift5">
+<path d="M95 60L215 120L215 136L95 76Z" fill="#0f1b25" stroke="#f0b35a" stroke-opacity=".35"/>
+<path d="M215 120L335 60L335 76L215 136Z" fill="#0c161f" stroke="#f0b35a" stroke-opacity=".35"/>
+<path d="M215 0L335 60L215 120L95 60Z" fill="#132230" stroke="#f0b35a" stroke-opacity=".75"/>
+<path d="M215 14L307 60L215 106L123 60Z" fill="none" stroke="#f0b35a" stroke-opacity=".2" stroke-dasharray="3 5"/>
+<path class="glow glow5" d="M215 0L335 60L215 120L95 60Z" fill="#f0b35a" fill-opacity=".14" stroke="#f0b35a" stroke-width="2"/>
+<text class="code" x="215" y="108" text-anchor="middle" fill="#f0b35a">L6</text>
+<path d="M343 60H408" stroke="#2f4254" stroke-dasharray="2 4"/>
+<circle cx="414" cy="60" r="3" fill="#f0b35a"/>
+<text class="lab" x="428" y="57">AI &amp; applications</text>
+<text class="tech" x="428" y="75">LangGraph · MCP · Gemini Live · PyTorch · WPF</text>
+</g>
+<g class="pkt"><circle cx="215" cy="414" r="10" fill="#f0b35a" opacity=".22"/><circle cx="215" cy="414" r="4.5" fill="#f0b35a"/></g>
+</g>
+</svg>

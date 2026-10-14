@@ -39,3 +39,9 @@ The `project-siemens.svg`, `project-modbus.svg`, and `project-ros.svg` buttons a
 Additional original static SVG buttons: `project-stock.svg`, `project-diabetes.svg`, and `project-husarion.svg`. Descriptions use the Stock-price-prediction and Diabetes-prediction-using-machine-learning READMEs, and the husarion_ws source tree (ROS 2 controllers and Gazebo packages). The workspace button describes the assembled stack without claiming authorship of upstream packages.
 
 Personal-story and achievement additions use the public LinkedIn listing at https://rs.linkedin.com/in/dusan-grkovic (read September 12, 2026): EESTEC team and conference organization, CMD.exe local EESTech Challenge win, and the gripper thesis post. Existing ERC, Pupin nomination, and scholarship details remain grounded in the supplied CVs. The full LinkedIn About section was unavailable.
+
+## 3D hero and stack
+
+`hero-arm.webp` is an original Three.js render: a three-joint arm solves inverse kinematics to move a part between two stations over a procedural circuit board. The capture uses one full loop (13.8 seconds at 15 frames per second), rendered at 1920 by 600 and downscaled to 1280 by 400. The joint readout shows the solver's real angles. `hero-arm-still.png` is one frame from the same loop; the README shows it when the browser requests reduced motion.
+
+`stack-isometric.svg` is an original isometric drawing of six technology layers. Its CSS animation lifts the layers apart and sends a highlight upward, and it is disabled for reduced motion.
