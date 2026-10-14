@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-arm-still.png" />
-  <img src="assets/hero-arm.webp" alt="Dušan Grković: embedded systems, robotics, and industrial automation. A 3D robot arm moves a part between two stations over a circuit board." width="100%" />
+  <img src="assets/hero-arm.webp" alt="Dušan Grković: robotics, industrial automation, embedded systems, and AI and LLM tools. A 3D robot arm moves parts beside a PLC rack, a microcontroller, and an LLM graph." width="100%" />
 </picture>
 
 <p>
@@ -13,82 +13,26 @@ I'm an electrical and computer engineer who works across embedded systems, robot
 
 My projects range from a magnetic slip-sensing gripper to EV charging simulations and AI applications. I like work where software has a clear connection to the physical system.
 
-> [!NOTE]
-> **Now:** M.Sc. in Computing and Control Engineering at the University of Novi Sad.<br>
-> **CERN, June to August 2026:** an OPC UA PubSub publisher, PLC timing tools, and a UNICOS workbook MCP server. My [technical report](https://repository.cern/records/b6jfa-g7j31) covers the publisher.
-
-## Project showcase
-
-<table>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Grkila/gridlab-ev-grid-simulator">GridLab</a></h3>
-<a href="https://github.com/Grkila/gridlab-ev-grid-simulator"><img src="assets/gridlab-dashboard.png" alt="GridLab project preview" width="420" /></a>
-<p>EV charging scenarios, controller comparisons, and reinforcement learning on a synthetic Novi Sad grid. Built with our EV Days team.</p>
-<p><sub>Python · pandapower · MCP</sub></p>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection">Adaptive gripper</a></h3>
-<a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/gripper-still.png" /><img src="assets/gripper-demo.gif" alt="Adaptive gripper project preview" width="420" /></picture></a>
-<p>My thesis: magnetic slip sensing, custom electronics, and ESP32 firmware. About 90 ms minimum reaction time.</p>
-<p><sub>ESP32 · FreeRTOS · FFT</sub></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Grkila/Airlock-Control-System-HIL-Testbench">Airlock testbench</a></h3>
-<a href="https://github.com/Grkila/Airlock-Control-System-HIL-Testbench"><img src="assets/airlock-testbench.png" alt="Airlock testbench project preview" width="420" /></a>
-<p>Rover airlock firmware with a Python simulator and hardware-in-the-loop validation. Part of my NSpace work.</p>
-<p><sub>C++ · ESP32 · Python</sub></p>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control">Robot manipulator</a></h3>
-<a href="https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control"><img src="assets/manipulator-panel.jpg" alt="Robot manipulator project preview" width="420" /></a>
-<p>A two-joint robot simulation with PID, fuzzy PID, sliding-mode control, and hand-tracking input.</p>
-<p><sub>LabVIEW · Python · MediaPipe</sub></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Grkila/SCADA-Industrial-Automation-Assignment">SCADA application</a></h3>
-<a href="https://github.com/Grkila/SCADA-Industrial-Automation-Assignment"><img src="assets/scada-monitor.png" alt="SCADA application project preview" width="420" /></a>
-<p>An academic monitoring application with simulated PLC data, configurable alarms, and recorded history.</p>
-<p><sub>C# · WPF · SQL</sub></p>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Grkila/Differential-Motion-Analyzer">Motion Analyzer</a></h3>
-<a href="https://github.com/Grkila/Differential-Motion-Analyzer"><img src="assets/motion-analyzer.png" alt="Motion Analyzer project preview" width="420" /></a>
-<p>Desktop video analysis with motion detection, adjustable regions, and annotated video export.</p>
-<p><sub>Python · OpenCV · PyQt6</sub></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Grkila/gdg-accessibility-agent">SilverOne</a></h3>
-<a href="https://github.com/Grkila/gdg-accessibility-agent"><img src="assets/silverone-flow.svg" alt="SilverOne project preview" width="420" /></a>
-<p>Shared Android assistant project with voice input, device actions, and service fallbacks.</p>
-<p><sub>Java · Gemini Live · Firebase</sub></p>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Grkila/Intro-Path-Discovery">Intro Path Discovery</a></h3>
-<a href="https://github.com/Grkila/Intro-Path-Discovery"><img src="assets/intro-paths.svg" alt="Intro Path Discovery project preview" width="420" /></a>
-<p>Shared AI project that finds introduction paths through connection data and ranks them with explicit scoring rules.</p>
-<p><sub>Python · LangGraph · Streamlit</sub></p>
-</td>
-</tr>
-</table>
-
-<sub>The gripper preview uses accelerated test footage. The two AI previews are concept diagrams. Select any card for code and project details.</sub>
-
-### More projects
+## Projects
 
 <p>
-<a href="https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects"><img src="assets/project-siemens.svg" alt="Siemens S7: PLC programming · TIA Portal" width="270" height="68" /></a>
-<a href="https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller"><img src="assets/project-modbus.svg" alt="Modbus on 8051: Serial communication · Modbus ASCII" width="270" height="68" /></a>
-<a href="https://github.com/Grkila/Husarion-panther-sim-setup"><img src="assets/project-ros.svg" alt="Panther simulation: ROS 2 setup · Docker" width="270" height="68" /></a>
-<a href="https://github.com/Grkila/Stock-price-prediction"><img src="assets/project-stock.svg" alt="Stock indicators: MATLAB · Time-series features" width="270" height="68" /></a>
-<a href="https://github.com/Grkila/Diabetes-prediction-using-machine-learning"><img src="assets/project-diabetes.svg" alt="Diabetes classification: Python · Ensemble model experiments" width="270" height="68" /></a>
-<a href="https://github.com/Grkila/husarion_ws"><img src="assets/project-husarion.svg" alt="Husarion workspace: ROS 2 · Controllers and Gazebo" width="270" height="68" /></a>
+<a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection"><img src="assets/cards/gripper.svg" alt="Adaptive gripper" width="48%" /></a>
+<a href="https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control"><img src="assets/cards/manipulator.svg" alt="Robot manipulator" width="48%" /></a>
+<a href="https://github.com/Grkila/SCADA-Industrial-Automation-Assignment"><img src="assets/cards/scada.svg" alt="SCADA application" width="48%" /></a>
+<a href="https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects"><img src="assets/cards/siemens.svg" alt="Siemens S7 projects" width="48%" /></a>
+<a href="https://github.com/Grkila/Airlock-Control-System-HIL-Testbench"><img src="assets/cards/airlock.svg" alt="Airlock HIL testbench" width="48%" /></a>
+<a href="https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller"><img src="assets/cards/modbus.svg" alt="Modbus on 8051" width="48%" /></a>
+<a href="https://github.com/Grkila/gridlab-ev-grid-simulator"><img src="assets/cards/gridlab.svg" alt="GridLab" width="48%" /></a>
+<a href="https://github.com/Grkila/Intro-Path-Discovery"><img src="assets/cards/intro-paths.svg" alt="Intro Path Discovery" width="48%" /></a>
+</p>
+
+<p>
+<a href="https://github.com/Grkila/gdg-accessibility-agent"><img src="assets/cards/silverone.svg" alt="SilverOne" width="32%" /></a>
+<a href="https://github.com/Grkila/Differential-Motion-Analyzer"><img src="assets/cards/motion.svg" alt="Motion Analyzer" width="32%" /></a>
+<a href="https://github.com/Grkila/Husarion-panther-sim-setup"><img src="assets/cards/panther.svg" alt="Panther simulation" width="32%" /></a>
+<a href="https://github.com/Grkila/husarion_ws"><img src="assets/cards/husarion.svg" alt="Husarion workspace" width="32%" /></a>
+<a href="https://github.com/Grkila/Diabetes-prediction-using-machine-learning"><img src="assets/cards/diabetes.svg" alt="Diabetes classifier" width="32%" /></a>
+<a href="https://github.com/Grkila/Stock-price-prediction"><img src="assets/cards/stock.svg" alt="Stock indicators" width="32%" /></a>
 </p>
 
 ## Stack, from silicon to SCADA
@@ -117,31 +61,11 @@ These cover my independent builds, team projects, and university coursework.
 
 </details>
 
-## My story
+## Highlights
 
-I like building teams as much as building hardware. Each chapter below added something new: leading people, shipping a full system, competing in the field, and then industrial work at CERN.
-
-<img src="assets/story-route.svg" alt="My path so far: Teams, Build, Field, Industry, and Now, connected by a circuit trace." width="100%" />
-
-<table>
-<tr>
-<td width="24%" valign="top"><b>01 · Teams</b><br><sub>EESTEC Novi Sad</sub></td>
-<td valign="top">I led a 20-person team and organized events, including a three-day student conference. Our team, CMD.exe, <b>won the local EESTech Challenge</b> with a Raspberry Pi temperature-control system.</td>
-</tr>
-<tr>
-<td valign="top"><b>02 · Build</b><br><sub>Bachelor's thesis</sub></td>
-<td valign="top">I built an <a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection">adaptive gripper</a> end to end: mechanics, custom PCB, ESP32 firmware, and test rig. It received a <b>departmental Pupin Award nomination</b>.</td>
-</tr>
-<tr>
-<td valign="top"><b>03 · Field</b><br><sub>NSpace rover team</sub></td>
-<td valign="top">I led the embedded and robotics sub-team. NSpace placed <b>seventh in the Remote Formula at the European Rover Challenge 2025</b>.</td>
-</tr>
-<tr>
-<td valign="top"><b>04 · Industry</b><br><sub>CERN, summer 2026</sub></td>
-<td valign="top">I worked on industrial communications: an <b>OPC UA PubSub publisher for UNICOS</b>, PLC timing tools, and a workbook MCP server. The publisher is covered in my <a href="https://repository.cern/records/b6jfa-g7j31">technical report</a>.</td>
-</tr>
-<tr>
-<td valign="top"><b>05 · Now</b><br><sub>University of Novi Sad</sub></td>
-<td valign="top">I'm studying for an M.Sc. in Computing and Control Engineering. I'm also a <b>Dositeja Scholarship</b> recipient.</td>
-</tr>
-</table>
+- **CERN, summer student in industrial communications (2026).** Built and tested an OPC UA PubSub publisher for the UNICOS control framework, stress-tested with 5,000 writers at cycles down to 2 ms. Also built a VS Code extension that measures PLC execution time and a TypeScript MCP server for UNICOS specification workbooks. [Technical report](https://repository.cern/records/b6jfa-g7j31)
+- **NSpace, European Rover Challenge 2025.** Led the embedded software and robotics sub-team; the rover placed **7th of 25** in the Remote Formula. Wrote the airlock firmware and its HIL testbench, and set up ROS 2 with Docker and NVIDIA Isaac Sim in the cloud.
+- **Adaptive gripper thesis (2025).** Slip detection with low-cost 3D magnetic sensors and a 2 kHz ESP32 control loop, reacting in about 90 ms. The Department of Computing and Control nominated it for **Matica srpska's Pupin Award**.
+- **GridLab, Schneider Electric EV Days hackathon (2026).** Four-person team. Capacity-aware charging handled 48,000 vehicles versus 13,000 with immediate charging, and 39 MCP tools let an AI agent run experiments.
+- **Awards.** 1st place EESTech Challenge (2025), 1st place Origin Case Study (2023), Dositeja Scholarship.
+- **Education.** M.Sc. in Computing and Control Engineering (since 2025); B.Sc. in Electrical and Computer Engineering, GPA 9.11/10. University of Novi Sad.

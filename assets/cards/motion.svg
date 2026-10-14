@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="76" viewBox="0 0 300 76" role="img" aria-label="Motion Analyzer: video motion detection with OpenCV.">
+<rect x=".5" y=".5" width="299" height="75" rx="12" fill="#0f1922" stroke="#22313f"/>
+<rect x="14" y="16" width="44" height="44" rx="10" fill="#132230" stroke="#b9a2ff" stroke-opacity=".5"/>
+<g transform="translate(24 26) scale(1.0)" fill="none" stroke="#b9a2ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 7.9l3.8 3.2M6.6 16.1l3.8-3.2M13.6 11.1l3.8-3.2M13.6 12.9l3.8 3.2M6.8 7a1.8 1.8 0 1 1-3.6 0a1.8 1.8 0 1 1 3.6 0M6.8 17a1.8 1.8 0 1 1-3.6 0a1.8 1.8 0 1 1 3.6 0M14 12a2 2 0 1 1-4 0a2 2 0 1 1 4 0M20.8 7a1.8 1.8 0 1 1-3.6 0a1.8 1.8 0 1 1 3.6 0M20.8 17a1.8 1.8 0 1 1-3.6 0a1.8 1.8 0 1 1 3.6 0"/></g>
+<text x="72" y="35" fill="#e9eef3" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="600">Motion Analyzer</text>
+<text x="72" y="55" fill="#7d8fa1" font-family="Consolas,Menlo,monospace" font-size="11">OpenCV · PyQt6</text>
+<path d="M270 18h8v8M269 27l9-9" fill="none" stroke="#7d8fa1" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
