@@ -6,7 +6,7 @@ The project cards use four domain colors and icons: robotics (amber, arm), indus
 
 ## Banner
 
-`hero-arm.webp` is a Blender 5.2 EEVEE render of an engineering lab, built through the Blender MCP add-on ([ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp)). A Franka Panda arm picks up a sponge (the thesis slip tests used sponges) and places it across the bench, then brings it back, so the loop is seamless. Its joint angles come from inverse kinematics on the official Panda kinematics, and the fingers close on the sponge. Around it: a neon name sign, an HMI trend monitor and an LLM tool console, a gripper-controller PCB, a wall control cabinet, a Husarion Panther UGV, and a PLC training stand. The loop is 13.4 seconds at 15 frames per second, rendered at 1280 by 400, with a soft bloom added afterwards. `hero-arm-still.jpg` is one frame for reduced-motion viewers.
+`hero-arm.webp` is a Blender 5.2 EEVEE render of an engineering lab, built through the Blender MCP add-on ([ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp)). A Franka Panda arm picks up a sponge (the thesis slip tests used sponges) and places it across the bench, then brings it back, so the loop is seamless. Its joint angles come from inverse kinematics on the official Panda kinematics, and the fingers close on the sponge. Around it, with nothing intersecting: a neon name sign, an HMI trend monitor and an LLM tool console, a gripper-controller PCB, a wall control cabinet, a Husarion Panther UGV, and a PLC training stand. The loop is 13.4 seconds at 15 frames per second, rendered at 1920 by 600, with a soft bloom added afterwards. `hero-arm-still.jpg` is one frame for reduced-motion viewers.
 
 Assets:
 
@@ -22,7 +22,7 @@ Every built object is textured: Poly Haven textures with box projection for the 
 `tools/blender/` holds the pipeline in run order. Set `BANNER_DIR` to a working folder that contains the converted `glb/` meshes and `poses.json`, and `SIEMENS_MODELS` to the folder with the Siemens OBJ exports. Run `00_*` with system Python. Run the rest inside Blender through the MCP add-on's `execute_code`, then render with `blender -b banner.blend -a`. Finally, apply `08_bloom.py` and encode:
 
 ```sh
-ffmpeg -framerate 15 -i bloom/f%04d.png -c:v libwebp_anim -quality 72 -compression_level 6 -loop 0 assets/hero-arm.webp
+ffmpeg -framerate 15 -i bloom/f%04d.png -c:v libwebp_anim -quality 90 -compression_level 6 -loop 0 assets/hero-arm.webp
 ```
 
 ## Project cards

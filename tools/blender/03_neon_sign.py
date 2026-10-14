@@ -11,7 +11,7 @@ def mark(o):
     return o
 
 WALL_Y = 1.45
-CENTER = Vector((0.0, WALL_Y - 0.06, 1.62))
+CENTER = Vector((0.15, WALL_Y - 0.06, 1.95))
 root = mark(bpy.data.objects.new("NeonSign", None)); scene.collection.objects.link(root)
 root.location = CENTER
 
@@ -50,9 +50,9 @@ def tube_text(name, text, size, loc, mat, font, depth):
 font = bpy.data.fonts.load(r"C:\Windows\Fonts\segoeuisl.ttf", check_existing=True)
 NEON = (0.45, 0.93, 1.0)
 AMBER = (1.0, 0.62, 0.22)
-name = tube_text("NeonName", "Dušan Grković", 0.38, (0, 0, 0.05), neon_mat("NeonTeal", NEON, 28.0), font, 0.0042)
+name = tube_text("NeonName", "Dušan Grković", 0.5, (0, 0, 0.07), neon_mat("NeonTeal", NEON, 28.0), font, 0.0042)
 sub_font = bpy.data.fonts.load(r"C:\Windows\Fonts\segoeui.ttf", check_existing=True)
-sub = tube_text("NeonSub", "embedded  ·  robotics  ·  automation  ·  AI", 0.085, (0, 0, -0.2), neon_mat("NeonAmber", AMBER, 22.0), sub_font, 0.0022)
+sub = tube_text("NeonSub", "embedded  ·  robotics  ·  automation  ·  AI", 0.13, (0, 0, -0.27), neon_mat("NeonAmber", AMBER, 22.0), sub_font, 0.003)
 
 # acrylic backer, standoffs and a wall wash light for the halo
 glass = bpy.data.materials.get("Acrylic") or bpy.data.materials.new("Acrylic")
@@ -65,19 +65,19 @@ gb.inputs['Alpha'].default_value = 0.25
 glass.surface_render_method = 'BLENDED' if hasattr(glass, "surface_render_method") else None
 bpy.ops.mesh.primitive_cube_add(size=1)
 backer = mark(bpy.context.active_object); backer.name = "NeonBacker"
-backer.scale = (1.55, 0.008, 0.58); bpy.ops.object.transform_apply(scale=True)
+backer.scale = (2.05, 0.008, 0.78); bpy.ops.object.transform_apply(scale=True)
 backer.parent = root; backer.location = (0, 0.03, -0.03)
 md = backer.modifiers.new("bevel", 'BEVEL'); md.width = 0.01; md.segments = 3
 backer.data.materials.append(glass)
 steel = bpy.data.materials.get("Steel")
-for i, (x, z) in enumerate([(-0.73, 0.22), (0.73, 0.22), (-0.73, -0.29), (0.73, -0.29)]):
+for i, (x, z) in enumerate([(-0.98, 0.32), (0.98, 0.32), (-0.98, -0.4), (0.98, -0.4)]):
     bpy.ops.mesh.primitive_cylinder_add(radius=0.012, depth=0.07, vertices=24)
     s = mark(bpy.context.active_object); s.name = f"NeonStandoff{i}"
     s.rotation_euler = (math.pi / 2, 0, 0); s.parent = root; s.location = (x, 0.035, z)
     if steel: s.data.materials.append(steel)
 
 wash = bpy.data.lights.get("NeonWash") or bpy.data.lights.new("NeonWash", 'AREA')
-wash.shape = 'RECTANGLE'; wash.size = 1.5; wash.size_y = 0.45
+wash.shape = 'RECTANGLE'; wash.size = 2.0; wash.size_y = 0.6
 wash.energy = 55; wash.color = NEON
 wo = mark(bpy.data.objects.new("NeonWash", wash)); scene.collection.objects.link(wo)
 wo.parent = root; wo.location = (0, 0.0, 0); wo.rotation_euler = (-math.pi / 2, 0, 0)  # faces the wall
