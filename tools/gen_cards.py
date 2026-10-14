@@ -90,6 +90,55 @@ def scene_paths():
     return out
 
 
+def scene_scada():
+    """HMI view built from the SCADA app's real tags and alarm (Adresa1 AI sine, high limit 20)."""
+    c = COL["auto"]
+    out = '<rect width="480" height="270" fill="#0b141c"/><rect width="480" height="30" fill="#132230"/>'
+    out += f'<text x="14" y="20" fill="#e9eef3" font-family="{SANS}" font-size="13" font-weight="600">SCADA · Monitor</text>'
+    out += f'<circle cx="396" cy="15" r="4" fill="#7fd38a"/><text x="406" y="19" fill="#7fd38a" font-family="{MONO}" font-size="10">SCAN 200ms</text>'
+    tags = [("AI", "Adresa1", "63.4", "#6aa8ff"), ("AO", "Izlaz", "41.0", "#7fd38a"), ("DO", "Motor1", "ON", "#f0b35a"), ("DI", "Stop", "OFF", "#b9a2ff")]
+    for i, (t, n, v, tc) in enumerate(tags):
+        y = 42 + i * 36
+        out += f'<rect x="12" y="{y}" width="150" height="28" rx="6" fill="#132230"/>'
+        out += f'<rect x="20" y="{y + 6}" width="26" height="16" rx="4" fill="{tc}"/><text x="33" y="{y + 18}" fill="#0b141c" font-family="{MONO}" font-size="10" font-weight="700" text-anchor="middle">{t}</text>'
+        out += f'<text x="54" y="{y + 18}" fill="#e9eef3" font-family="{MONO}" font-size="11">{n}</text><text x="154" y="{y + 18}" fill="#e9eef3" font-family="{MONO}" font-size="11" text-anchor="end">{v}</text>'
+    out += '<rect x="174" y="42" width="294" height="136" rx="8" fill="#0f1b26"/>'
+    out += "".join(f'<path d="M182 {60 + k * 22}H460" stroke="#1d2c3a"/>' for k in range(6))
+    import math as _m
+    pts = " ".join(f"{182 + i},{110 - 52 * _m.sin(i / 22):.1f}" for i in range(0, 279, 3))
+    out += f'<path d="M182 99.6H460" stroke="#dc5046" stroke-width="1.5" stroke-dasharray="5 4"/><text x="458" y="94" fill="#f06e64" font-family="{MONO}" font-size="9.5" text-anchor="end">HI 20</text>'
+    out += f'<polyline points="{pts}" fill="none" stroke="{c}" stroke-width="2.2"/>'
+    out += '<rect x="12" y="192" width="456" height="30" rx="6" fill="#3c1416" stroke="#7a2a2c"/>'
+    out += f'<circle cx="28" cy="207" r="5" fill="#ff6a5c"/><text x="42" y="211" fill="#ffd0c8" font-family="{MONO}" font-size="11">ALARM  Adresa1 &gt; 20  Kriticna temperatura</text>'
+    out += f'<text x="14" y="248" fill="#7d8fa1" font-family="{MONO}" font-size="10.5">Tags 4  ·  Alarms 2  ·  Reports  ·  Alarm history</text>'
+    return out
+
+
+def scene_silverone():
+    """Voice -> Gemini Live -> tool dispatch -> device action, with the fallback chain from the README."""
+    c = COL["ai"]
+    out = grid(c)
+    out += '<rect x="26" y="26" width="104" height="196" rx="16" fill="#132230" stroke="#3a4f63" stroke-width="2"/><rect x="62" y="34" width="32" height="5" rx="2.5" fill="#3a4f63"/>'
+    out += "".join(f'<rect x="{46 + i * 9}" y="{118 - h / 2}" width="5" height="{h}" rx="2.5" fill="{c}"/>' for i, h in enumerate([10, 26, 44, 30, 52, 36, 20, 12]))
+    out += f'<rect x="38" y="160" width="80" height="26" rx="13" fill="{c}"/><text x="78" y="177" fill="#0b141c" font-family="{SANS}" font-size="11" font-weight="600" text-anchor="middle">"Call Ana"</text>'
+    def node(x, y, w, label, sub, col):
+        return (f'<rect x="{x}" y="{y}" width="{w}" height="42" rx="9" fill="#132230" stroke="{col}"/>'
+                f'<text x="{x + w / 2}" y="{y + 18}" fill="#e9eef3" font-family="{SANS}" font-size="12" font-weight="600" text-anchor="middle">{label}</text>'
+                f'<text x="{x + w / 2}" y="{y + 33}" fill="#93a4b5" font-family="{MONO}" font-size="9.5" text-anchor="middle">{sub}</text>')
+    out += f'<path d="M134 124H160" stroke="{c}" stroke-width="2"/><path d="M262 124H288" stroke="{c}" stroke-width="2"/>'
+    out += node(162, 103, 98, "Gemini Live", "intent", c) + node(290, 103, 100, "Tool dispatch", "validate · run", "#f0b35a")
+    for i, (lab, y) in enumerate([("call", 50), ("message", 103), ("alarm", 156)]):
+        out += f'<path d="M392 124C410 124 404 {y + 15} 420 {y + 15}" fill="none" stroke="#3a4f63" stroke-width="1.5"/>'
+        out += f'<rect x="420" y="{y}" width="48" height="30" rx="7" fill="#132230" stroke="{"#7fd38a" if i == 0 else "#3a4f63"}"/><text x="444" y="{y + 19}" fill="{"#7fd38a" if i == 0 else "#93a4b5"}" font-family="{MONO}" font-size="9.5" text-anchor="middle">{lab}</text>'
+    out += f'<text x="162" y="214" fill="#7d8fa1" font-family="{MONO}" font-size="9.5">FALLBACK</text>'
+    for i, lab in enumerate(["Live", "API", "A2A", "Legacy"]):
+        x = 162 + i * 76
+        out += f'<rect x="{x}" y="222" width="64" height="24" rx="12" fill="#132230" stroke="{c if i == 0 else "#3a4f63"}"/><text x="{x + 32}" y="238" fill="{"#e9eef3" if i == 0 else "#93a4b5"}" font-family="{MONO}" font-size="10" text-anchor="middle">{lab}</text>'
+        if i < 3:
+            out += f'<path d="M{x + 66} 234H{x + 74}" stroke="#3a4f63" stroke-width="1.5"/>'
+    return out
+
+
 def card(slug, key, title, desc, tech, media, alt):
     W, H = 480, 384
     m = f'<image href="{embed(media)}" width="480" height="270" preserveAspectRatio="xMidYMid slice"/>' if isinstance(media, str) else media()
@@ -129,10 +178,10 @@ card("gripper", "robo", "Adaptive gripper", "Thesis: magnetic slip sensing, abou
      "gripper-still.png", "Adaptive gripper: thesis project with magnetic slip sensing. ESP32, FreeRTOS, FFT.")
 card("manipulator", "robo", "Robot manipulator", "PID, fuzzy PID and sliding-mode control", "LabVIEW · Python · MediaPipe",
      "manipulator-panel.jpg", "Robot manipulator: two-joint control with PID, fuzzy PID and sliding-mode control.")
-card("scada", "auto", "SCADA application", "Simulated PLC data, alarms and history", "C# · WPF · SQL",
-     "scada-monitor.png", "SCADA application: monitoring with simulated PLC data, alarms and history.")
-card("siemens", "auto", "Siemens S7 projects", "Practical PLC programming exercises", "S7-1200 · TIA Portal · Ladder",
-     scene_ladder, "Siemens S7 projects: practical PLC programming in TIA Portal.")
+card("scada", "auto", "SCADA application", "Tags, alarm limits, trends and history over simulated PLC data", "C# · WPF · SQL",
+     scene_scada, "SCADA application: tags, alarms and live trends over simulated PLC data.")
+card("silverone", "ai", "SilverOne", "Voice assistant: LLM intent, deterministic device tools", "Java · Gemini Live · Firebase · RAG",
+     scene_silverone, "SilverOne: Android voice assistant team project with Gemini Live and tool dispatch.")
 card("airlock", "emb", "Airlock HIL testbench", "Rover airlock firmware with hardware-in-the-loop tests", "C++ · ESP32 · Python",
      "airlock-testbench.png", "Airlock HIL testbench: rover airlock firmware with a Python simulator.")
 card("modbus", "emb", "Modbus on 8051", "Bare-metal Modbus slave: coils and registers", "C · 8051 · Modbus ASCII",
@@ -142,14 +191,11 @@ card("gridlab", "ai", "GridLab", "EV Days hackathon: EV charging on a city power
 card("intro-paths", "ai", "Intro Path Discovery", "Finds and ranks introduction paths (team project)", "Python · LangGraph · Streamlit",
      scene_paths, "Intro Path Discovery: team project that finds and ranks introduction paths with LangGraph.")
 
-mini("silverone", "ai", "SilverOne", "Gemini Live · Android", "SilverOne: Android voice assistant team project.")
+mini("siemens", "auto", "Siemens S7 projects", "S7-1200 · TIA Portal", "Siemens S7 projects: PLC programming in TIA Portal.")
 mini("motion", "ai", "Motion Analyzer", "OpenCV · PyQt6", "Motion Analyzer: video motion detection with OpenCV.")
 mini("panther", "robo", "Panther simulation", "ROS 2 Jazzy · Docker", "Panther simulation: ROS 2 setup in Docker.")
 mini("husarion", "robo", "Husarion workspace", "ROS 2 · Gazebo", "Husarion workspace: ROS 2 controllers and Gazebo.")
 mini("diabetes", "ai", "Diabetes classifier", "Python · scikit-learn", "Diabetes classification with ensemble models.")
 mini("stock", "ai", "Stock indicators", "MATLAB · time series", "Stock indicators: MATLAB time-series features.")
 
-for k in ICON:
-    open(os.path.join(OUT, f"icon-{k}.svg"), "w", encoding="utf-8").write(
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="{NAME[k]}">{icon(k, 0, 0, 24)}</svg>')
 print("ok")

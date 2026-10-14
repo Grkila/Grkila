@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-arm-still.png" />
-  <img src="assets/hero-arm.webp" alt="Dušan Grković: robotics, industrial automation, embedded systems, and AI and LLM tools. A 3D robot arm moves parts beside a PLC rack, a microcontroller, and an LLM graph." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-arm-still.jpg" />
+  <img src="assets/hero-arm.webp" alt="Dušan Grković in neon on a lab wall. A Franka Panda arm moves a sponge across a bench beside HMI and LLM monitors, a control cabinet, a SIMATIC S7-1500 training stand, and a Husarion Panther rover." width="100%" />
 </picture>
 
 <p>
@@ -18,16 +18,16 @@ My projects range from a magnetic slip-sensing gripper to EV charging simulation
 <p>
 <a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection"><img src="assets/cards/gripper.svg" alt="Adaptive gripper" width="48%" /></a>
 <a href="https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control"><img src="assets/cards/manipulator.svg" alt="Robot manipulator" width="48%" /></a>
+<a href="https://github.com/Grkila/gdg-accessibility-agent"><img src="assets/cards/silverone.svg" alt="SilverOne" width="48%" /></a>
+<a href="https://github.com/Grkila/gridlab-ev-grid-simulator"><img src="assets/cards/gridlab.svg" alt="GridLab" width="48%" /></a>
 <a href="https://github.com/Grkila/SCADA-Industrial-Automation-Assignment"><img src="assets/cards/scada.svg" alt="SCADA application" width="48%" /></a>
-<a href="https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects"><img src="assets/cards/siemens.svg" alt="Siemens S7 projects" width="48%" /></a>
 <a href="https://github.com/Grkila/Airlock-Control-System-HIL-Testbench"><img src="assets/cards/airlock.svg" alt="Airlock HIL testbench" width="48%" /></a>
 <a href="https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller"><img src="assets/cards/modbus.svg" alt="Modbus on 8051" width="48%" /></a>
-<a href="https://github.com/Grkila/gridlab-ev-grid-simulator"><img src="assets/cards/gridlab.svg" alt="GridLab" width="48%" /></a>
 <a href="https://github.com/Grkila/Intro-Path-Discovery"><img src="assets/cards/intro-paths.svg" alt="Intro Path Discovery" width="48%" /></a>
 </p>
 
 <p>
-<a href="https://github.com/Grkila/gdg-accessibility-agent"><img src="assets/cards/silverone.svg" alt="SilverOne" width="32%" /></a>
+<a href="https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects"><img src="assets/cards/siemens.svg" alt="Siemens S7 projects" width="32%" /></a>
 <a href="https://github.com/Grkila/Differential-Motion-Analyzer"><img src="assets/cards/motion.svg" alt="Motion Analyzer" width="32%" /></a>
 <a href="https://github.com/Grkila/Husarion-panther-sim-setup"><img src="assets/cards/panther.svg" alt="Panther simulation" width="32%" /></a>
 <a href="https://github.com/Grkila/husarion_ws"><img src="assets/cards/husarion.svg" alt="Husarion workspace" width="32%" /></a>
