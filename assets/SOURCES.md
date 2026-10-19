@@ -4,6 +4,10 @@
 
 The project cards use four domain colors and icons: robotics (amber, arm), industrial automation (blue, PLC module), embedded systems (green, chip), and AI and LLM tools (violet, node graph).
 
+## Light and dark themes
+
+The README serves every graphic in two themes through `<picture>` sources keyed on `prefers-color-scheme`, which follows the viewer's GitHub theme. `hero-arm-light.webp` is the same scene rendered as a daytime lab (`tools/blender/09_daylight.py`), with saturated neon and no bloom so the name stays readable on a bright wall. `cards/light/` and `stack-isometric-light.svg` are made by `python tools/theme_light.py`, which swaps the dark palette for GitHub's light palette and leaves embedded screenshots untouched. The banner also has a reduced-motion still in each theme.
+
 ## Banner
 
 `hero-arm.webp` is a Blender 5.2 EEVEE render of an engineering lab, built through the Blender MCP add-on ([ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp)). A Franka Panda arm picks up a sponge (the thesis slip tests used sponges) and places it across the bench, then brings it back, so the loop is seamless. Its joint angles come from inverse kinematics on the official Panda kinematics, and the fingers close on the sponge. Around it, with nothing intersecting: a neon name sign, an HMI trend monitor and an LLM tool console, a gripper-controller PCB, a wall control cabinet, a Husarion Panther UGV, and a PLC training stand. The loop is 13.4 seconds at 15 frames per second, rendered at 1920 by 600, with a soft bloom added afterwards. `hero-arm-still.jpg` is one frame for reduced-motion viewers.

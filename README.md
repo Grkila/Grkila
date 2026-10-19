@@ -1,5 +1,7 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-arm-still.jpg" />
+  <source media="(prefers-color-scheme: light) and (prefers-reduced-motion: reduce)" srcset="assets/hero-arm-light-still.jpg" />
+  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/hero-arm-still.jpg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-arm-light.webp" />
   <img src="assets/hero-arm.webp" alt="Dušan Grković in neon on a lab wall. A Franka Panda arm moves a sponge across a bench beside HMI and LLM monitors, a control cabinet, a SIMATIC S7-1500 training stand, and a Husarion Panther rover." width="100%" />
 </picture>
 
@@ -16,28 +18,28 @@ My projects range from a magnetic slip-sensing gripper to EV charging simulation
 ## Projects
 
 <p>
-<a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection"><img src="assets/cards/gripper.svg" alt="Adaptive gripper" width="48%" /></a>
-<a href="https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control"><img src="assets/cards/manipulator.svg" alt="Robot manipulator" width="48%" /></a>
-<a href="https://github.com/Grkila/gdg-accessibility-agent"><img src="assets/cards/silverone.svg" alt="SilverOne" width="48%" /></a>
-<a href="https://github.com/Grkila/gridlab-ev-grid-simulator"><img src="assets/cards/gridlab.svg" alt="GridLab" width="48%" /></a>
-<a href="https://github.com/Grkila/SCADA-Industrial-Automation-Assignment"><img src="assets/cards/scada.svg" alt="SCADA application" width="48%" /></a>
-<a href="https://github.com/Grkila/Airlock-Control-System-HIL-Testbench"><img src="assets/cards/airlock.svg" alt="Airlock HIL testbench" width="48%" /></a>
-<a href="https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller"><img src="assets/cards/modbus.svg" alt="Modbus on 8051" width="48%" /></a>
-<a href="https://github.com/Grkila/Intro-Path-Discovery"><img src="assets/cards/intro-paths.svg" alt="Intro Path Discovery" width="48%" /></a>
+<a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/gripper.svg" /><img src="assets/cards/gripper.svg" alt="Adaptive gripper" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/manipulator.svg" /><img src="assets/cards/manipulator.svg" alt="Robot manipulator" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/gdg-accessibility-agent"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/silverone.svg" /><img src="assets/cards/silverone.svg" alt="SilverOne" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/gridlab-ev-grid-simulator"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/gridlab.svg" /><img src="assets/cards/gridlab.svg" alt="GridLab" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/SCADA-Industrial-Automation-Assignment"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/scada.svg" /><img src="assets/cards/scada.svg" alt="SCADA application" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/Airlock-Control-System-HIL-Testbench"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/airlock.svg" /><img src="assets/cards/airlock.svg" alt="Airlock HIL testbench" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/modbus.svg" /><img src="assets/cards/modbus.svg" alt="Modbus on 8051" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/Intro-Path-Discovery"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/intro-paths.svg" /><img src="assets/cards/intro-paths.svg" alt="Intro Path Discovery" width="48%" /></picture></a>
 </p>
 
 <p>
-<a href="https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects"><img src="assets/cards/siemens.svg" alt="Siemens S7 projects" width="32%" /></a>
-<a href="https://github.com/Grkila/Differential-Motion-Analyzer"><img src="assets/cards/motion.svg" alt="Motion Analyzer" width="32%" /></a>
-<a href="https://github.com/Grkila/Husarion-panther-sim-setup"><img src="assets/cards/panther.svg" alt="Panther simulation" width="32%" /></a>
-<a href="https://github.com/Grkila/husarion_ws"><img src="assets/cards/husarion.svg" alt="Husarion workspace" width="32%" /></a>
-<a href="https://github.com/Grkila/Diabetes-prediction-using-machine-learning"><img src="assets/cards/diabetes.svg" alt="Diabetes classifier" width="32%" /></a>
-<a href="https://github.com/Grkila/Stock-price-prediction"><img src="assets/cards/stock.svg" alt="Stock indicators" width="32%" /></a>
+<a href="https://github.com/Grkila/Siemens-S7-Practical-Programming-Projects"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/siemens.svg" /><img src="assets/cards/siemens.svg" alt="Siemens S7 projects" width="32%" /></picture></a>
+<a href="https://github.com/Grkila/Differential-Motion-Analyzer"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/motion.svg" /><img src="assets/cards/motion.svg" alt="Motion Analyzer" width="32%" /></picture></a>
+<a href="https://github.com/Grkila/Husarion-panther-sim-setup"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/panther.svg" /><img src="assets/cards/panther.svg" alt="Panther simulation" width="32%" /></picture></a>
+<a href="https://github.com/Grkila/husarion_ws"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/husarion.svg" /><img src="assets/cards/husarion.svg" alt="Husarion workspace" width="32%" /></picture></a>
+<a href="https://github.com/Grkila/Diabetes-prediction-using-machine-learning"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/diabetes.svg" /><img src="assets/cards/diabetes.svg" alt="Diabetes classifier" width="32%" /></picture></a>
+<a href="https://github.com/Grkila/Stock-price-prediction"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/stock.svg" /><img src="assets/cards/stock.svg" alt="Stock indicators" width="32%" /></picture></a>
 </p>
 
 ## Stack, from silicon to SCADA
 
-<img src="assets/stack-isometric.svg" alt="Six-layer stack: hardware and test, firmware and robotics, networks and protocols, industrial control, supervision and data, and AI and applications." width="100%" />
+<picture><source media="(prefers-color-scheme: light)" srcset="assets/stack-isometric-light.svg" /><img src="assets/stack-isometric.svg" alt="Six-layer stack: hardware and test, firmware and robotics, networks and protocols, industrial control, supervision and data, and AI and applications." width="100%" /></picture>
 
 <details>
 <summary><strong>Full list of technologies and tools</strong></summary>
