@@ -39,7 +39,7 @@ def grid(col):
     return f'<rect width="480" height="270" fill="#0d1821"/><g stroke="{col}" stroke-opacity=".07">{lines}</g>'
 
 
-def scene_ladder():
+def scene_ladder():  # unused by the current grid; returns markup only
     c = COL["auto"]
     rungs = []
     for i, y in enumerate([70, 125, 180]):
@@ -57,45 +57,63 @@ def scene_ladder():
 
 
 def scene_modbus():
+    """8051 slave answering a Modbus frame: a request packet travels in, bytes light up in order."""
     c = COL["emb"]
     pins = "".join(f'<path d="M{x} 70v-18M{x} 200v18" stroke="{c}" stroke-width="3"/>' for x in range(110, 211, 20))
     pins += "".join(f'<path d="M90 {y}h-18M230 {y}h18" stroke="{c}" stroke-width="3"/>' for y in range(95, 181, 20))
     frame = ["01", "03", "00", "00", "00", "0A", "C5", "CD"]
-    boxes = "".join(
-        f'<rect x="{285 + (i % 4) * 44}" y="{98 + (i // 4) * 46}" width="38" height="32" rx="5" fill="#132230" stroke="{c if i < 2 else "#2f4254"}"/>'
-        f'<text x="{304 + (i % 4) * 44}" y="{119 + (i // 4) * 46}" fill="{"#e9eef3" if i < 2 else "#93a4b5"}" font-family="{MONO}" font-size="13" text-anchor="middle">{b}</text>'
-        for i, b in enumerate(frame))
+    boxes = ""
+    for i, b in enumerate(frame):
+        x, y = 285 + (i % 4) * 44, 98 + (i // 4) * 46
+        boxes += (f'<rect x="{x}" y="{y}" width="38" height="32" rx="5" fill="#132230" stroke="#2f4254"/>'
+                  f'<rect class="byte" style="animation-delay:{0.6 + i * 0.28:.2f}s" x="{x}" y="{y}" width="38" height="32" rx="5" fill="{c}" fill-opacity=".14" stroke="{c}"/>'
+                  f'<text x="{x + 19}" y="{y + 21}" fill="#e9eef3" font-family="{MONO}" font-size="13" text-anchor="middle">{b}</text>')
+    css = ('.byte{opacity:0;animation:byte 4.8s ease-in-out infinite}'
+           '@keyframes byte{0%,8%{opacity:0}14%,70%{opacity:1}82%,100%{opacity:0}}'
+           '.pkt{animation:pkt 4.8s ease-in-out infinite}'
+           '@keyframes pkt{0%{transform:translateX(0);opacity:0}4%{opacity:1}12%{transform:translateX(30px);opacity:1}16%,100%{transform:translateX(30px);opacity:0}}'
+           '.led{animation:led 1.2s steps(2,start) infinite}@keyframes led{to{opacity:.25}}')
     return grid(c) + pins + f'<rect x="90" y="70" width="140" height="130" rx="10" fill="#132230" stroke="{c}" stroke-width="2"/>' \
-        f'<circle cx="108" cy="88" r="5" fill="{c}"/><text x="160" y="142" fill="{c}" font-family="{MONO}" font-size="20" font-weight="700" text-anchor="middle">8051</text>' \
-        f'<path d="M248 135H278" stroke="{c}" stroke-dasharray="4 4" stroke-width="2"/>' + boxes + \
-        f'<text x="285" y="84" fill="#93a4b5" font-family="{MONO}" font-size="11">MODBUS FRAME</text>'
+        f'<circle class="led" cx="108" cy="88" r="5" fill="{c}"/><text x="160" y="142" fill="{c}" font-family="{MONO}" font-size="20" font-weight="700" text-anchor="middle">8051</text>' \
+        f'<path d="M248 135H278" stroke="{c}" stroke-dasharray="4 4" stroke-width="2"/>' \
+        f'<circle class="pkt" cx="248" cy="135" r="4" fill="{c}"/>' + boxes + \
+        f'<text x="285" y="84" fill="#93a4b5" font-family="{MONO}" font-size="11">MODBUS FRAME</text>', css
 
 
 def scene_paths():
+    """Ranked introduction paths: the best route draws itself, then its score appears."""
     c = COL["ai"]
     nodes = {"you": (70, 135), "a": (170, 70), "b": (170, 200), "c": (280, 110), "d": (280, 210), "e": (380, 60), "goal": (410, 150)}
     edges = [("you", "a"), ("you", "b"), ("a", "c"), ("b", "c"), ("b", "d"), ("c", "e"), ("c", "goal"), ("d", "goal"), ("e", "goal")]
-    best = {("you", "b"), ("b", "c"), ("c", "goal")}
     out = grid(c)
     for a, b in edges:
         (x1, y1), (x2, y2) = nodes[a], nodes[b]
-        on = (a, b) in best
-        out += f'<path d="M{x1} {y1}L{x2} {y2}" stroke="{"#f0b35a" if on else c}" stroke-opacity="{1 if on else .35}" stroke-width="{3 if on else 1.5}"/>'
-    for k, (x, y) in nodes.items():
+        out += f'<path d="M{x1} {y1}L{x2} {y2}" stroke="{c}" stroke-opacity=".35" stroke-width="1.5"/>'
+    out += '<path class="best" d="M70 135L170 200L280 110L410 150" fill="none" stroke="#f0b35a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>'
+    for i, (k, (x, y)) in enumerate(nodes.items()):
         big = k in ("you", "goal")
         out += f'<circle cx="{x}" cy="{y}" r="{14 if big else 9}" fill="#132230" stroke="{"#f0b35a" if big else c}" stroke-width="2"/>'
+        if k in ("b", "c"):
+            out += f'<circle class="hop" style="animation-delay:{0.9 if k == "b" else 1.7}s" cx="{x}" cy="{y}" r="9" fill="none" stroke="#f0b35a" stroke-width="2.5"/>'
     out += f'<text x="70" y="171" fill="#93a4b5" font-family="{MONO}" font-size="11" text-anchor="middle">YOU</text>'
     out += f'<text x="410" y="186" fill="#93a4b5" font-family="{MONO}" font-size="11" text-anchor="middle">TARGET</text>'
-    out += f'<rect x="300" y="226" width="150" height="26" rx="6" fill="#132230" stroke="#2f4254"/><text x="312" y="243" fill="#e9eef3" font-family="{MONO}" font-size="11">best path · score 0.87</text>'
-    return out
+    out += f'<g class="score"><rect x="300" y="226" width="150" height="26" rx="6" fill="#132230" stroke="#2f4254"/><text x="312" y="243" fill="#e9eef3" font-family="{MONO}" font-size="11">best path · score 0.87</text></g>'
+    css = ('.best{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 5s ease-in-out infinite}'
+           '@keyframes draw{0%,8%{stroke-dashoffset:420}55%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:-420}}'
+           '.hop{opacity:0;animation:hop 5s ease-out infinite;transform-box:fill-box;transform-origin:center}'
+           '@keyframes hop{0%,10%{opacity:0;transform:scale(1)}20%{opacity:1;transform:scale(1.25)}60%{opacity:.8;transform:scale(1)}90%,100%{opacity:0}}'
+           '.score{opacity:0;animation:score 5s ease infinite}@keyframes score{0%,52%{opacity:0}60%,86%{opacity:1}96%,100%{opacity:0}}')
+    return out, css
 
 
 def scene_scada():
     """HMI view built from the SCADA app's real tags and alarm (Adresa1 AI sine, high limit 20)."""
+    import math as _m
     c = COL["auto"]
-    out = '<rect width="480" height="270" fill="#0b141c"/><rect width="480" height="30" fill="#132230"/>'
+    out = '<defs><clipPath id="trend"><rect x="176" y="44" width="290" height="132" rx="7"/></clipPath></defs>'
+    out += '<rect width="480" height="270" fill="#0b141c"/><rect width="480" height="30" fill="#132230"/>'
     out += f'<text x="14" y="20" fill="#e9eef3" font-family="{SANS}" font-size="13" font-weight="600">SCADA · Monitor</text>'
-    out += f'<circle cx="396" cy="15" r="4" fill="#7fd38a"/><text x="406" y="19" fill="#7fd38a" font-family="{MONO}" font-size="10">SCAN 200ms</text>'
+    out += f'<circle class="scan" cx="396" cy="15" r="4" fill="#7fd38a"/><text x="406" y="19" fill="#7fd38a" font-family="{MONO}" font-size="10">SCAN 200ms</text>'
     tags = [("AI", "Adresa1", "63.4", "#6aa8ff"), ("AO", "Izlaz", "41.0", "#7fd38a"), ("DO", "Motor1", "ON", "#f0b35a"), ("DI", "Stop", "OFF", "#b9a2ff")]
     for i, (t, n, v, tc) in enumerate(tags):
         y = 42 + i * 36
@@ -104,14 +122,17 @@ def scene_scada():
         out += f'<text x="54" y="{y + 18}" fill="#e9eef3" font-family="{MONO}" font-size="11">{n}</text><text x="154" y="{y + 18}" fill="#e9eef3" font-family="{MONO}" font-size="11" text-anchor="end">{v}</text>'
     out += '<rect x="174" y="42" width="294" height="136" rx="8" fill="#0f1b26"/>'
     out += "".join(f'<path d="M182 {60 + k * 22}H460" stroke="#1d2c3a"/>' for k in range(6))
-    import math as _m
-    pts = " ".join(f"{182 + i},{110 - 52 * _m.sin(i / 22):.1f}" for i in range(0, 279, 3))
+    period = 2 * _m.pi * 22
+    pts = " ".join(f"{182 + i},{110 - 52 * _m.sin(i / 22):.1f}" for i in range(0, int(278 + period) + 4, 3))
+    out += f'<g clip-path="url(#trend)"><polyline class="wave" points="{pts}" fill="none" stroke="{c}" stroke-width="2.2"/></g>'
     out += f'<path d="M182 99.6H460" stroke="#dc5046" stroke-width="1.5" stroke-dasharray="5 4"/><text x="458" y="94" fill="#f06e64" font-family="{MONO}" font-size="9.5" text-anchor="end">HI 20</text>'
-    out += f'<polyline points="{pts}" fill="none" stroke="{c}" stroke-width="2.2"/>'
-    out += '<rect x="12" y="192" width="456" height="30" rx="6" fill="#3c1416" stroke="#7a2a2c"/>'
-    out += f'<circle cx="28" cy="207" r="5" fill="#ff6a5c"/><text x="42" y="211" fill="#ffd0c8" font-family="{MONO}" font-size="11">ALARM  Adresa1 &gt; 20  Kriticna temperatura</text>'
+    out += '<g class="alarm"><rect x="12" y="192" width="456" height="30" rx="6" fill="#3c1416" stroke="#7a2a2c"/>'
+    out += f'<circle cx="28" cy="207" r="5" fill="#ff6a5c"/><text x="42" y="211" fill="#ffd0c8" font-family="{MONO}" font-size="11">ALARM  Adresa1 &gt; 20  Kriticna temperatura</text></g>'
     out += f'<text x="14" y="248" fill="#7d8fa1" font-family="{MONO}" font-size="10.5">Tags 4  ·  Alarms 2  ·  Reports  ·  Alarm history</text>'
-    return out
+    css = (f'.wave{{animation:wave 4s linear infinite}}@keyframes wave{{to{{transform:translateX(-{period:.2f}px)}}}}'
+           '.alarm{animation:alarm 1.6s steps(2,start) infinite}@keyframes alarm{to{opacity:.45}}'
+           '.scan{animation:scan 1s ease-in-out infinite}@keyframes scan{50%{opacity:.25}}')
+    return out, css
 
 
 def scene_silverone():
@@ -119,36 +140,59 @@ def scene_silverone():
     c = COL["ai"]
     out = grid(c)
     out += '<rect x="26" y="26" width="104" height="196" rx="16" fill="#132230" stroke="#3a4f63" stroke-width="2"/><rect x="62" y="34" width="32" height="5" rx="2.5" fill="#3a4f63"/>'
-    out += "".join(f'<rect x="{46 + i * 9}" y="{118 - h / 2}" width="5" height="{h}" rx="2.5" fill="{c}"/>' for i, h in enumerate([10, 26, 44, 30, 52, 36, 20, 12]))
+    out += "".join(f'<rect class="bar" style="animation-delay:{i * 0.11:.2f}s" x="{46 + i * 9}" y="{118 - h / 2}" width="5" height="{h}" rx="2.5" fill="{c}"/>'
+                   for i, h in enumerate([10, 26, 44, 30, 52, 36, 20, 12]))
     out += f'<rect x="38" y="160" width="80" height="26" rx="13" fill="{c}"/><text x="78" y="177" fill="#0b141c" font-family="{SANS}" font-size="11" font-weight="600" text-anchor="middle">"Call Ana"</text>'
-    def node(x, y, w, label, sub, col):
-        return (f'<rect x="{x}" y="{y}" width="{w}" height="42" rx="9" fill="#132230" stroke="{col}"/>'
+
+    def node(x, y, w, label, sub, col, cls=""):
+        return (f'<rect class="{cls}" x="{x}" y="{y}" width="{w}" height="42" rx="9" fill="#132230" stroke="{col}"/>'
                 f'<text x="{x + w / 2}" y="{y + 18}" fill="#e9eef3" font-family="{SANS}" font-size="12" font-weight="600" text-anchor="middle">{label}</text>'
                 f'<text x="{x + w / 2}" y="{y + 33}" fill="#93a4b5" font-family="{MONO}" font-size="9.5" text-anchor="middle">{sub}</text>')
     out += f'<path d="M134 124H160" stroke="{c}" stroke-width="2"/><path d="M262 124H288" stroke="{c}" stroke-width="2"/>'
-    out += node(162, 103, 98, "Gemini Live", "intent", c) + node(290, 103, 100, "Tool dispatch", "validate · run", "#f0b35a")
+    out += node(162, 103, 98, "Gemini Live", "intent", c, "n1") + node(290, 103, 100, "Tool dispatch", "validate · run", "#f0b35a", "n2")
     for i, (lab, y) in enumerate([("call", 50), ("message", 103), ("alarm", 156)]):
         out += f'<path d="M392 124C410 124 404 {y + 15} 420 {y + 15}" fill="none" stroke="#3a4f63" stroke-width="1.5"/>'
-        out += f'<rect x="420" y="{y}" width="48" height="30" rx="7" fill="#132230" stroke="{"#7fd38a" if i == 0 else "#3a4f63"}"/><text x="444" y="{y + 19}" fill="{"#7fd38a" if i == 0 else "#93a4b5"}" font-family="{MONO}" font-size="9.5" text-anchor="middle">{lab}</text>'
+        cls = ' class="act"' if i == 0 else ""
+        out += f'<rect{cls} x="420" y="{y}" width="48" height="30" rx="7" fill="#132230" stroke="{"#7fd38a" if i == 0 else "#3a4f63"}"/><text x="444" y="{y + 19}" fill="{"#7fd38a" if i == 0 else "#93a4b5"}" font-family="{MONO}" font-size="9.5" text-anchor="middle">{lab}</text>'
+    out += f'<path class="sig" d="M134 124H392C410 124 404 65 420 65" fill="none" stroke="#e9eef3" stroke-width="3" stroke-linecap="round"/>'
     out += f'<text x="162" y="214" fill="#7d8fa1" font-family="{MONO}" font-size="9.5">FALLBACK</text>'
     for i, lab in enumerate(["Live", "API", "A2A", "Legacy"]):
         x = 162 + i * 76
         out += f'<rect x="{x}" y="222" width="64" height="24" rx="12" fill="#132230" stroke="{c if i == 0 else "#3a4f63"}"/><text x="{x + 32}" y="238" fill="{"#e9eef3" if i == 0 else "#93a4b5"}" font-family="{MONO}" font-size="10" text-anchor="middle">{lab}</text>'
         if i < 3:
             out += f'<path d="M{x + 66} 234H{x + 74}" stroke="#3a4f63" stroke-width="1.5"/>'
-    return out
+    css = ('.bar{transform-box:fill-box;transform-origin:center;animation:bar .9s ease-in-out infinite alternate}'
+           '@keyframes bar{from{transform:scaleY(.35)}to{transform:scaleY(1)}}'
+           '.sig{stroke-dasharray:26 400;stroke-dashoffset:26;animation:sig 3.2s ease-in-out infinite}'
+           '@keyframes sig{0%{stroke-dashoffset:26;opacity:0}6%{opacity:1}62%{stroke-dashoffset:-318;opacity:1}70%,100%{stroke-dashoffset:-318;opacity:0}}'
+           '.n1{animation:n1 3.2s infinite}@keyframes n1{18%,30%{stroke-width:2.5}0%,12%,40%,100%{stroke-width:1}}'
+           '.n2{animation:n2 3.2s infinite}@keyframes n2{38%,50%{stroke-width:2.5}0%,32%,60%,100%{stroke-width:1}}'
+           '.act{animation:act 3.2s infinite}@keyframes act{62%,80%{fill:#7fd38a;fill-opacity:.25}0%,56%,90%,100%{fill-opacity:1}}')
+    return out, css
 
 
 def card(slug, key, title, desc, tech, media, alt):
     W, H = 480, 384
-    m = f'<image href="{embed(media)}" width="480" height="270" preserveAspectRatio="xMidYMid slice"/>' if isinstance(media, str) else media()
+    css = ""
+    if isinstance(media, str):
+        m = f'<image href="{embed(media)}" width="480" height="270" preserveAspectRatio="xMidYMid slice"/>'
+    else:
+        m, css = media()
+    delay = (sum(map(ord, slug)) % 30) / 10
+    css += (f'.sweep{{animation:sweep 5s ease-in-out {delay:.1f}s infinite}}'
+            '@keyframes sweep{0%{transform:translateX(-120px)}55%,100%{transform:translateX(600px)}}'
+            '@media (prefers-reduced-motion:reduce){*{animation:none!important}.best{stroke-dashoffset:0!important}'
+            '.score,.byte,.hop{opacity:1!important}.sig,.pkt{opacity:0!important}}')
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{alt}">
-<defs><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath></defs>
+<style>{css}</style>
+<defs><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath>
+<linearGradient id="sw" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs>
 <g clip-path="url(#c)">
 <rect width="{W}" height="{H}" fill="#0f1922"/>
 {m}
 <rect y="270" width="{W}" height="{H - 270}" fill="#0f1922"/>
 <rect y="269" width="{W}" height="2" fill="{COL[key]}"/>
+<rect class="sweep" y="268.5" width="120" height="3" fill="url(#sw)"/>
 </g>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="14" fill="none" stroke="#22313f"/>
 {icon(key, 20, 286, 16)}
