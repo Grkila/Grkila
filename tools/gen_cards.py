@@ -5,7 +5,7 @@ Run from the repository root: python gen_cards.py
 import base64, io, os, sys
 from PIL import Image
 
-ROOT = sys.argv[1]
+ROOT = sys.argv[1] if len(sys.argv) > 1 else "."
 OUT = os.path.join(ROOT, "assets", "cards")
 os.makedirs(OUT, exist_ok=True)
 
@@ -171,10 +171,12 @@ def scene_silverone():
     return out, css
 
 
-def card(slug, key, title, desc, tech, media, alt):
+def card(slug, key, title, desc, tech, media, alt, out_path=None):
     W, H = 480, 384
     css = ""
-    if isinstance(media, str):
+    if media is None:  # transparent media area: chrome overlay for raster (animated WebP) cards
+        m = ""
+    elif isinstance(media, str):
         m = f'<image href="{embed(media)}" width="480" height="270" preserveAspectRatio="xMidYMid slice"/>'
     else:
         m, css = media()
@@ -188,7 +190,7 @@ def card(slug, key, title, desc, tech, media, alt):
 <defs><clipPath id="c"><rect width="{W}" height="{H}" rx="14"/></clipPath>
 <linearGradient id="sw" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs>
 <g clip-path="url(#c)">
-<rect width="{W}" height="{H}" fill="#0f1922"/>
+{'' if media is None else f'<rect width="{W}" height="{H}" fill="#0f1922"/>'}
 {m}
 <rect y="270" width="{W}" height="{H - 270}" fill="#0f1922"/>
 <rect y="269" width="{W}" height="2" fill="{COL[key]}"/>
@@ -202,7 +204,7 @@ def card(slug, key, title, desc, tech, media, alt):
 <text x="20" y="351" fill="#b4c2d0" font-family="{SANS}" font-size="13.5">{desc}</text>
 <text x="20" y="371" fill="#7d8fa1" font-family="{MONO}" font-size="11.5">{tech}</text>
 </svg>'''
-    open(os.path.join(OUT, f"{slug}.svg"), "w", encoding="utf-8").write(svg)
+    open(out_path or os.path.join(OUT, f"{slug}.svg"), "w", encoding="utf-8").write(svg)
 
 
 def mini(slug, key, title, tech, alt):
@@ -218,28 +220,23 @@ def mini(slug, key, title, tech, alt):
     open(os.path.join(OUT, f"{slug}.svg"), "w", encoding="utf-8").write(svg)
 
 
-card("gripper", "robo", "Adaptive gripper", "Thesis: magnetic slip sensing, about 90 ms reaction", "ESP32 · FreeRTOS · FFT · Python",
-     "gripper-still.png", "Adaptive gripper: thesis project with magnetic slip sensing. ESP32, FreeRTOS, FFT.")
-card("manipulator", "robo", "Robot manipulator", "PID, fuzzy PID and sliding-mode control", "LabVIEW · Python · MediaPipe",
-     "manipulator-panel.jpg", "Robot manipulator: two-joint control with PID, fuzzy PID and sliding-mode control.")
-card("scada", "auto", "SCADA application", "Tags, alarm limits, trends and history over simulated PLC data", "C# · WPF · SQL",
-     scene_scada, "SCADA application: tags, alarms and live trends over simulated PLC data.")
-card("silverone", "ai", "SilverOne", "Voice assistant: LLM intent, deterministic device tools", "Java · Gemini Live · Firebase · RAG",
-     scene_silverone, "SilverOne: Android voice assistant team project with Gemini Live and tool dispatch.")
-card("airlock", "emb", "Airlock HIL testbench", "Rover airlock firmware with hardware-in-the-loop tests", "C++ · ESP32 · Python",
-     "airlock-testbench.png", "Airlock HIL testbench: rover airlock firmware with a Python simulator.")
-card("modbus", "emb", "Modbus on 8051", "Bare-metal Modbus slave: coils and registers", "C · 8051 · Modbus ASCII",
-     scene_modbus, "Modbus on 8051: bare-metal Modbus slave in C.")
-card("gridlab", "ai", "GridLab", "EV Days hackathon: EV charging on a city power grid", "Python · pandapower · RL · MCP",
-     "gridlab-dashboard.png", "GridLab: EV charging scenarios and reinforcement learning on a synthetic Novi Sad grid.")
-card("intro-paths", "ai", "Intro Path Discovery", "Finds and ranks introduction paths (team project)", "Python · LangGraph · Streamlit",
-     scene_paths, "Intro Path Discovery: team project that finds and ranks introduction paths with LangGraph.")
+if __name__ == "__main__":
+    card("manipulator", "robo", "Robot manipulator", "PID, fuzzy PID and sliding-mode control", "LabVIEW · Python · MediaPipe",
+         "manipulator-panel.jpg", "Robot manipulator: two-joint control with PID, fuzzy PID and sliding-mode control.")
+    card("scada", "auto", "SCADA application", "Tags, alarm limits, trends and history over simulated PLC data", "C# · WPF · SQL",
+         scene_scada, "SCADA application: tags, alarms and live trends over simulated PLC data.")
+    card("silverone", "ai", "SilverOne", "Voice assistant: LLM intent, deterministic device tools", "Java · Gemini Live · Firebase · RAG",
+         scene_silverone, "SilverOne: Android voice assistant team project with Gemini Live and tool dispatch.")
+    card("modbus", "emb", "Modbus on 8051", "Bare-metal Modbus slave: coils and registers", "C · 8051 · Modbus ASCII",
+         scene_modbus, "Modbus on 8051: bare-metal Modbus slave in C.")
+    card("intro-paths", "ai", "Intro Path Discovery", "Finds and ranks introduction paths (team project)", "Python · LangGraph · Streamlit",
+         scene_paths, "Intro Path Discovery: team project that finds and ranks introduction paths with LangGraph.")
 
-mini("siemens", "auto", "Siemens S7 projects", "S7-1200 · TIA Portal", "Siemens S7 projects: PLC programming in TIA Portal.")
-mini("motion", "ai", "Motion Analyzer", "OpenCV · PyQt6", "Motion Analyzer: video motion detection with OpenCV.")
-mini("panther", "robo", "Panther simulation", "ROS 2 Jazzy · Docker", "Panther simulation: ROS 2 setup in Docker.")
-mini("husarion", "robo", "Husarion workspace", "ROS 2 · Gazebo", "Husarion workspace: ROS 2 controllers and Gazebo.")
-mini("diabetes", "ai", "Diabetes classifier", "Python · scikit-learn", "Diabetes classification with ensemble models.")
-mini("stock", "ai", "Stock indicators", "MATLAB · time series", "Stock indicators: MATLAB time-series features.")
+    mini("siemens", "auto", "Siemens S7 projects", "S7-1200 · TIA Portal", "Siemens S7 projects: PLC programming in TIA Portal.")
+    mini("motion", "ai", "Motion Analyzer", "OpenCV · PyQt6", "Motion Analyzer: video motion detection with OpenCV.")
+    mini("panther", "robo", "Panther simulation", "ROS 2 Jazzy · Docker", "Panther simulation: ROS 2 setup in Docker.")
+    mini("husarion", "robo", "Husarion workspace", "ROS 2 · Gazebo", "Husarion workspace: ROS 2 controllers and Gazebo.")
+    mini("diabetes", "ai", "Diabetes classifier", "Python · scikit-learn", "Diabetes classification with ensemble models.")
+    mini("stock", "ai", "Stock indicators", "MATLAB · time series", "Stock indicators: MATLAB time-series features.")
 
-print("ok")
+    print("ok")

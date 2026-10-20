@@ -37,7 +37,8 @@ def convert(src, dst):
     open(dst, "w", encoding="utf-8").write(s)
 
 
-for f in glob.glob("assets/cards/*.svg"):
-    convert(f, os.path.join("assets/cards/light", os.path.basename(f)))
-convert("assets/stack-isometric.svg", "assets/stack-isometric-light.svg")
-print("light theme ok")
+if __name__ == "__main__":
+    for f in glob.glob("assets/cards/*.svg"):
+        convert(f, os.path.join("assets/cards/light", os.path.basename(f)))
+    convert("assets/stack-isometric.svg", "assets/stack-isometric-light.svg")
+    print("light theme ok")

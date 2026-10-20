@@ -18,12 +18,12 @@ My projects range from a magnetic slip-sensing gripper to EV charging simulation
 ## Projects
 
 <p>
-<a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/gripper.svg" /><img src="assets/cards/gripper.svg" alt="Adaptive gripper" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/Adaptive-Gripper-with-Micro-Vibration-Based-Slip-Detection"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/gripper.webp" /><img src="assets/cards/gripper.webp" alt="Adaptive gripper" width="48%" /></picture></a>
 <a href="https://github.com/Grkila/Serial-Two-Joint-Robot-Manipulator-Simulation-and-Control"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/manipulator.svg" /><img src="assets/cards/manipulator.svg" alt="Robot manipulator" width="48%" /></picture></a>
 <a href="https://github.com/Grkila/gdg-accessibility-agent"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/silverone.svg" /><img src="assets/cards/silverone.svg" alt="SilverOne" width="48%" /></picture></a>
-<a href="https://github.com/Grkila/gridlab-ev-grid-simulator"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/gridlab.svg" /><img src="assets/cards/gridlab.svg" alt="GridLab" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/gridlab-ev-grid-simulator"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/gridlab.webp" /><img src="assets/cards/gridlab.webp" alt="GridLab" width="48%" /></picture></a>
 <a href="https://github.com/Grkila/SCADA-Industrial-Automation-Assignment"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/scada.svg" /><img src="assets/cards/scada.svg" alt="SCADA application" width="48%" /></picture></a>
-<a href="https://github.com/Grkila/Airlock-Control-System-HIL-Testbench"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/airlock.svg" /><img src="assets/cards/airlock.svg" alt="Airlock HIL testbench" width="48%" /></picture></a>
+<a href="https://github.com/Grkila/Airlock-Control-System-HIL-Testbench"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/airlock.webp" /><img src="assets/cards/airlock.webp" alt="Airlock HIL testbench" width="48%" /></picture></a>
 <a href="https://github.com/Grkila/MODBUS-for-intel-8051-microcontroller"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/modbus.svg" /><img src="assets/cards/modbus.svg" alt="Modbus on 8051" width="48%" /></picture></a>
 <a href="https://github.com/Grkila/Intro-Path-Discovery"><picture><source media="(prefers-color-scheme: light)" srcset="assets/cards/light/intro-paths.svg" /><img src="assets/cards/intro-paths.svg" alt="Intro Path Discovery" width="48%" /></picture></a>
 </p>
